@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojisodes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMh-iS-zqe">
+                                <rect key="frame" x="83" y="71" width="250" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="H9W-pM-ry6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 🎬 guessing game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3Z-5j-XAh">
+                                <rect key="frame" x="105" y="130" width="205" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Tile" translatesAutoresizingMaskIntoConstraints="NO" id="5Ly-YL-ElL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Ly-YL-ElL" secondAttribute="height" multiplier="9:16" id="zpD-2Y-t1O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
+                        <constraints>
+                            <constraint firstItem="5Ly-YL-ElL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8WF-jf-f2B"/>
+                            <constraint firstItem="5Ly-YL-ElL" firstAttribute="top" secondItem="vMh-iS-zqe" secondAttribute="bottom" constant="-133" id="9A6-V2-qT3"/>
+                            <constraint firstItem="V3Z-5j-XAh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZxX-0D-fHY"/>
+                            <constraint firstItem="vMh-iS-zqe" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="51" id="kmt-p5-urd"/>
+                            <constraint firstItem="5Ly-YL-ElL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rDE-T7-Edl"/>
+                            <constraint firstItem="V3Z-5j-XAh" firstAttribute="top" secondItem="vMh-iS-zqe" secondAttribute="bottom" constant="4" id="shL-ed-zuR"/>
+                            <constraint firstItem="5Ly-YL-ElL" firstAttribute="width" secondItem="5Ly-YL-ElL" secondAttribute="height" multiplier="9:16" id="tNU-Cg-FuB"/>
+                            <constraint firstItem="vMh-iS-zqe" firstAttribute="centerX" secondItem="V3Z-5j-XAh" secondAttribute="centerX" id="xpL-70-hTc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9A6-V2-qT3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="485"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background Tile" width="414" height="736"/>
+    </resources>
+</document>
