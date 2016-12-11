@@ -35,6 +35,8 @@ var now = ""
 var guessCount: Int = 0
 var streak = 0
 var skip = 0
+var remember = String()
+var comingBack : Bool = false
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -60,9 +62,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         print("viewDidLoad initial read of userDict is \(userDict)")
-        self.randomKeyfromFIR{ (movieToGuess) -> () in
-            self.getMovieData(movieToGuess)
+        if comingBack == true {
+            self.getMovieData(remember)
+            comingBack = false
+            remember = ""
+        } else {
+            self.randomKeyfromFIR{ (movieToGuess) -> () in
+                self.getMovieData(movieToGuess)
+            }
         }
+        
         self.userScore.text = String(userDict["score"]!)
         
     }
@@ -97,6 +106,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let submitPrompt = UIAlertController(title: "Try Adding a Movie", message: "You've done a lot of guessing. Why not try adding a movie for other people to guess?", preferredStyle: UIAlertControllerStyle.Alert)
                 let OKAction = UIAlertAction(title: "Okay", style: .Default) { (action) in
                     print("User has chosen the benvolent path.")
+                    remember = movieToGuess
                     self.performSegueWithIdentifier("AddMovie", sender: nil)
                 }
                 let cancelAction = UIAlertAction(title: "No Thanks", style: .Default) { (action) in
@@ -115,6 +125,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func updateProfileButton(sender: AnyObject) {
+        remember = movieToGuess
         performSegueWithIdentifier("updateProfile", sender: sender)
     }
    
@@ -304,6 +315,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func newRoundButton(sender: AnyObject) {
         self.nextRound()
+    }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        
+    }
+    
+    @IBAction func addMovie(sender: AnyObject) {
+        remember = movieToGuess
+        performSegueWithIdentifier("AddMovie", sender: sender)
     }
     
     func delay(delay:Double, closure:()->()) {

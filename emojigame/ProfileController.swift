@@ -60,8 +60,11 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         let userRef = ref.child("users").child(uzer)
         userRef.child("name").setValue(name)
         userRef.child("email").setValue(email)
-        performSegueWithIdentifier("backToGame", sender: sender)
+        comingBack = true
         analytics.flush()
+        self.dismissViewControllerAnimated(true, completion: nil)
+//        performSegueWithIdentifier("backToGame", sender: sender)
+        
     }
     
     func dismissKeyboard() {

@@ -42,7 +42,8 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
     }
     
     @IBAction func goBackButton(sender: AnyObject) {
-        performSegueWithIdentifier("finishAddingMovie", sender: sender)
+        comingBack = true
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func textFieldDidEndEditing(userSubmitPlot: UITextField) {
@@ -89,7 +90,7 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
                 print("The new movie has been added with an id of: \(movieId)")
                 let submitOkay = UIAlertController(title: "Success", message: "Your movie has been added to Emojisodes!", preferredStyle: UIAlertControllerStyle.Alert)
                 let nextRound = UIAlertAction(title: "Next Round", style: .Default) { (action) in
-                    self.performSegueWithIdentifier("finishAddingMovie", sender: sender)
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 let addAnother = UIAlertAction(title: "Add Another", style: .Default) { (action) in
                     self.userSubmitPlot.text = ""
