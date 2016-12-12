@@ -62,9 +62,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         userRef.child("email").setValue(email)
         comingBack = true
         analytics.flush()
-        self.dismissViewControllerAnimated(true, completion: nil)
-//        performSegueWithIdentifier("backToGame", sender: sender)
-        
+        self.dismissViewControllerAnimated(true, completion: nil)        
     }
     
     func dismissKeyboard() {

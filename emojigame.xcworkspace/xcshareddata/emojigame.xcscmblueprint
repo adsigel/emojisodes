@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "80059437D907E4800609280DE54AD09580015196",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "652CE3F4A7CCA7886C928709443954F1E3E7AA51" : 9223372036854775807,
+    "80059437D907E4800609280DE54AD09580015196" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1AF21A26-79E1-4165-8352-64DBA030A543",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "652CE3F4A7CCA7886C928709443954F1E3E7AA51" : "emojisodes\/Pods\/",
+    "80059437D907E4800609280DE54AD09580015196" : "emojisodes\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "emojigame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "emojigame.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adsigel\/emojigame",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "652CE3F4A7CCA7886C928709443954F1E3E7AA51"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adsigel\/emojisodes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80059437D907E4800609280DE54AD09580015196"
+    }
+  ]
+}
