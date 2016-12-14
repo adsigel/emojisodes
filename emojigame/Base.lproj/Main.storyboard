@@ -1073,12 +1073,17 @@
                                 <color key="shadowColor" red="0.035294117649999998" green="0.30196078430000001" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9kI-tG-CgI">
+                                <rect key="frame" x="169" y="178" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="prs-Eu-wvd" firstAttribute="centerX" secondItem="tEL-Vc-9jR" secondAttribute="centerX" id="JM1-27-cbE"/>
                             <constraint firstItem="Acf-CL-GHc" firstAttribute="centerX" secondItem="tEL-Vc-9jR" secondAttribute="centerX" id="Nuj-1W-ogg"/>
                             <constraint firstItem="Acf-CL-GHc" firstAttribute="top" secondItem="9oM-TU-eSS" secondAttribute="bottom" constant="4" id="OU3-Mp-rO9"/>
                             <constraint firstItem="HFk-it-3wC" firstAttribute="centerX" secondItem="tEL-Vc-9jR" secondAttribute="centerX" id="To4-Ur-BaV"/>
+                            <constraint firstItem="9oM-TU-eSS" firstAttribute="top" secondItem="9kI-tG-CgI" secondAttribute="bottom" constant="42.5" id="W0S-0E-B6j"/>
+                            <constraint firstItem="9kI-tG-CgI" firstAttribute="centerX" secondItem="prs-Eu-wvd" secondAttribute="centerX" id="W4y-uG-6D2"/>
                             <constraint firstItem="HFk-it-3wC" firstAttribute="top" secondItem="prs-Eu-wvd" secondAttribute="bottom" constant="-332" id="YGx-Wv-weK"/>
                             <constraint firstItem="prs-Eu-wvd" firstAttribute="centerY" secondItem="tEL-Vc-9jR" secondAttribute="centerY" id="Zg9-mB-Mqh"/>
                             <constraint firstItem="prs-Eu-wvd" firstAttribute="top" secondItem="9oM-TU-eSS" secondAttribute="bottom" constant="-348" id="ha9-HC-TuM"/>
@@ -1087,6 +1092,7 @@
                     </view>
                     <connections>
                         <outlet property="playButton" destination="HFk-it-3wC" id="KHn-kW-XeJ"/>
+                        <outlet property="spinner" destination="9kI-tG-CgI" id="N50-vt-jCF"/>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="logIn" modalTransitionStyle="coverVertical" id="0gz-hR-tL6"/>
                         <segue destination="s9i-Wd-cGL" kind="modal" identifier="firstTime" animates="NO" id="nCw-1C-Zhe"/>
                     </connections>

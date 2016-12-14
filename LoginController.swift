@@ -29,6 +29,7 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
     
     var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
 
    
     override func viewDidLoad() {
@@ -125,6 +126,7 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
                 newUser = "true"
             }
             self.playButton.hidden = false
+            self.spinner.hidden = true
         })
     }
     

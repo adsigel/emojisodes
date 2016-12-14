@@ -8,16 +8,21 @@
 
 import Foundation
 import UIKit
+import Firebase
+import AnalyticsSwift
 
 class MovieListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let cellIdentifier = "CellIdentifier"
-//    var fruits: [String] = []
-    
-    var tableItems = ["Swift","Python","PHP","Java","JavaScript","C#"]
+    var tableRows: Int = 0
+    var tableItems: Array = [String]()
+    var movieTitles: Array = [String]()
+    var moviePlots: Array = [String]()
+//    var movieList = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buildMovieList()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -26,14 +31,31 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    func buildMovieList() {
+        // get list of movies the user has completed
+        userRef.child(uzer).child("exclude").observeSingleEventOfType(.Value, withBlock: { (snapshot: FIRDataSnapshot!) in
+            var count = 0
+            count += Int(snapshot.childrenCount)
+            print("count of child nodes is \(count)")
+            self.tableRows = count
+        })
+        var excludeDict = userDict["exclude"]! as! [String: AnyObject]
+        print("exclusion dict is \(userDict["exclude"]!)")
+        tableItems = Array(excludeDict.keys)
+        print ("tableItems is \(tableItems)")
+//        print("movieList is \(movieList)")
+//        var movieListRows = movieList.keys
+//        print("movieListRows is \(movieListRows)")
+    }
+    
     
     //this method will populate the table view
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let tableRow = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell!
         
         //adding the item to table row
-        tableRow.textLabel?.text = tableItems[indexPath.row]
-        print("tableItems = \(tableItems)")
+        tableRow.textLabel?.text = tableItems[indexPath.row] as! String
+//        print("tableItems = \(tableItems)")
         return tableRow
     }
     
