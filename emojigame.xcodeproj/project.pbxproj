@@ -13,6 +13,7 @@
 		662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A41DF9B3B200761080 /* TwitterKit.framework */; };
 		662FF3A81DF9B3B200761080 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662FF3A51DF9B3B200761080 /* TwitterKitResources.bundle */; };
 		662FF3A91DF9B3B200761080 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A61DF9B3B200761080 /* TwitterCore.framework */; };
+		6652963A1E00580C00854403 /* MovieListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665296391E00580C00854403 /* MovieListController.swift */; };
 		666765671D7267C4001A3872 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666765661D7267C4001A3872 /* GameKit.framework */; };
 		66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A3F1D3CFEDF008FEA44 /* ViewController.swift */; };
 		66695A481D3CFEDF008FEA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A411D3CFEDF008FEA44 /* AppDelegate.swift */; };
@@ -84,6 +85,7 @@
 		66374B6B1D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B761D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B881D2F007D007024B1 /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
+		665296391E00580C00854403 /* MovieListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieListController.swift; path = emojigame/MovieListController.swift; sourceTree = SOURCE_ROOT; };
 		666765661D7267C4001A3872 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		666765681D7267C9001A3872 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		66695A3F1D3CFEDF008FEA44 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = emojigame/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -187,6 +189,7 @@
 				66695A431D3CFEDF008FEA44 /* Assets.xcassets */,
 				66695A3F1D3CFEDF008FEA44 /* ViewController.swift */,
 				66DE19BD1D524317001E589B /* AddMovieController.swift */,
+				665296391E00580C00854403 /* MovieListController.swift */,
 				66F8FD5D1D5B5CCD0027E031 /* LoginController.swift */,
 				66695A411D3CFEDF008FEA44 /* AppDelegate.swift */,
 				66695A421D3CFEDF008FEA44 /* Info.plist */,
@@ -582,6 +585,7 @@
 				662604BA1D6DDFBB001E0424 /* FirstTime2Controller.swift in Sources */,
 				662604B81D6DDFB1001E0424 /* FirstTimeController.swift in Sources */,
 				66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */,
+				6652963A1E00580C00854403 /* MovieListController.swift in Sources */,
 				66DE19C01D5245A2001E589B /* Movies.swift in Sources */,
 				6695A05B1D71A47400DE855F /* StringScore.swift in Sources */,
 				66695A481D3CFEDF008FEA44 /* AppDelegate.swift in Sources */,
