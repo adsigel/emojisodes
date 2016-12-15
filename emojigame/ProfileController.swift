@@ -13,6 +13,8 @@ import GameKit
 import AnalyticsSwift
 
 var gcScore : Int = 0
+var exclude: Int = 0
+var movieTitles: Array = [String]()
 
 class ProfileController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     
@@ -46,6 +48,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         self.emailField.text = String(userDict["email"]!)
         getSubmittedCount()
         getTrophies()
+        buildMovieList()
         print("userDict is \(userDict)")
     }
     
@@ -397,6 +400,32 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         userRef.child(uzer).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
             userDict = snapshot.value! as! [String : AnyObject]
             print("userDict is \(userDict)")
+        })
+        movieTitles = []
+    }
+    
+    func buildMovieList() {
+        // get list of movies the user has completed
+        userRef.child(uzer).child("exclude").observeSingleEventOfType(.Value, withBlock: { (snapshot: FIRDataSnapshot!) in
+            var count = 0
+            count += Int(snapshot.childrenCount)
+            print("count of child nodes is \(count)")
+            exclude = count
+        })
+        var excludeDict = userDict["exclude"]! as! [String: AnyObject]
+        print("exclusion dict is \(userDict["exclude"]!)")
+        var excludeKeys = Array(excludeDict.keys)
+        print ("excludeKeys is \(excludeKeys)")
+        movieRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            for item in snapshot.children {
+                let movieItem = Movies(snapshot: item as! FIRDataSnapshot)
+                print("movieItem is \(movieItem)")
+                movieID = movieItem.key!
+                if excludeKeys.contains(movieID) {
+                    print("Found a match")
+                    movieTitles.append(movieItem.title)
+                }
+            }
         })
     }
     

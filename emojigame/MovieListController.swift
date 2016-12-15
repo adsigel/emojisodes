@@ -16,13 +16,14 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     let cellIdentifier = "CellIdentifier"
     var tableRows: Int = 0
     var tableItems: Array = [String]()
-    var movieTitles: Array = [String]()
-    var moviePlots: Array = [String]()
+//    var movieTitles: Array = [String]()
+//    var moviePlots: Array = [String]()
 //    var movieList = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildMovieList()
+        tableItems = movieTitles
+        print("tableItems is \(tableItems)")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -43,9 +44,17 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         print("exclusion dict is \(userDict["exclude"]!)")
         tableItems = Array(excludeDict.keys)
         print ("tableItems is \(tableItems)")
-//        print("movieList is \(movieList)")
-//        var movieListRows = movieList.keys
-//        print("movieListRows is \(movieListRows)")
+        movieRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            for item in snapshot.children {
+                let movieItem = Movies(snapshot: item as! FIRDataSnapshot)
+                print("movieItem is \(movieItem)")
+                movieID = movieItem.key!
+                if self.tableItems.contains(movieID) {
+                    print("Found a match")
+                    self.tableItems.append(movieItem.title)
+                }
+            }
+        })
     }
     
     
