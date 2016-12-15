@@ -423,7 +423,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                 movieID = movieItem.key!
                 if excludeKeys.contains(movieID) {
                     print("Found a match")
-                    movieTitles.append(movieItem.title)
+                    movieTitles.append(movieItem.title.capitalizedString)
                 }
             }
         })
