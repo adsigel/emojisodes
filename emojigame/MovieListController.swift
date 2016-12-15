@@ -22,8 +22,8 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableItems = movieTitles
-        print("tableItems is \(tableItems)")
+//        tableItems = movieTitles
+//        print("tableItems is \(tableItems)")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -32,38 +32,14 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-    func buildMovieList() {
-        // get list of movies the user has completed
-        userRef.child(uzer).child("exclude").observeSingleEventOfType(.Value, withBlock: { (snapshot: FIRDataSnapshot!) in
-            var count = 0
-            count += Int(snapshot.childrenCount)
-            print("count of child nodes is \(count)")
-            self.tableRows = count
-        })
-        var excludeDict = userDict["exclude"]! as! [String: AnyObject]
-        print("exclusion dict is \(userDict["exclude"]!)")
-        tableItems = Array(excludeDict.keys)
-        print ("tableItems is \(tableItems)")
-        movieRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            for item in snapshot.children {
-                let movieItem = Movies(snapshot: item as! FIRDataSnapshot)
-                print("movieItem is \(movieItem)")
-                movieID = movieItem.key!
-                if self.tableItems.contains(movieID) {
-                    print("Found a match")
-                    self.tableItems.append(movieItem.title)
-                }
-            }
-        })
-    }
-    
     
     //this method will populate the table view
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let tableRow = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell!
         
         //adding the item to table row
-        tableRow.textLabel?.text = tableItems[indexPath.row] as! String
+        tableRow.textLabel?.text = moviePlots[indexPath.row] as! String
+        tableRow.detailTextLabel?.text = movieTitles[indexPath.row] as! String
 //        print("tableItems = \(tableItems)")
         return tableRow
     }
@@ -71,7 +47,7 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     
     //this method will return the total rows count in the table view
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        return tableItems.count
+        return moviePlots.count
     }
     
     @IBAction func finishUpButton(sender: AnyObject) {

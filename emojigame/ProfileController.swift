@@ -15,6 +15,7 @@ import AnalyticsSwift
 var gcScore : Int = 0
 var exclude: Int = 0
 var movieTitles: Array = [String]()
+var moviePlots: Array = [String]()
 
 class ProfileController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     
@@ -402,6 +403,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
             print("userDict is \(userDict)")
         })
         movieTitles = []
+        moviePlots = []
     }
     
     func buildMovieList() {
@@ -424,6 +426,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                 if excludeKeys.contains(movieID) {
                     print("Found a match")
                     movieTitles.append(movieItem.title.capitalizedString)
+                    moviePlots.append(movieItem.plot)
                 }
             }
         })
