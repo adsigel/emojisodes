@@ -55,6 +55,8 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
     
     @IBAction func viewMovieList(sender:AnyObject) {
         performSegueWithIdentifier("movieList", sender: sender)
+        analytics.enqueue(TrackMessageBuilder(event: "Viewed Completed").userId(uzer))
+        analytics.flush()
     }
     
     

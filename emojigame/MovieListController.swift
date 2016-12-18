@@ -10,15 +10,14 @@ import Foundation
 import UIKit
 import Firebase
 import AnalyticsSwift
+import TwitterKit
 
 class MovieListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let cellIdentifier = "CellIdentifier"
+    let cellIdentifier = "ButtonCell"
+    var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     var tableRows: Int = 0
     var tableItems: Array = [String]()
-//    var movieTitles: Array = [String]()
-//    var moviePlots: Array = [String]()
-//    var movieList = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +31,40 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    func bragFromList(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!)! as UITableViewCell
+        print(currentCell.textLabel!.text)
+        let composer = TWTRComposer()
+        
+        composer.setText("I'm playing @emojisodes and I figured out what movie this is! \(currentCell.textLabel!.text)")
+        
+        // Called from a UIViewController
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                print("Tweet composition cancelled")
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail"]).userId(uzer))
+            }
+            else {
+                print("Sending tweet!")
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success"]).userId(uzer))
+            }
+        }
+        
+    }
     
     //this method will populate the table view
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let tableRow = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell!
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ButtonCell
         
         //adding the item to table row
-        tableRow.textLabel?.text = moviePlots[indexPath.row] as! String
-        tableRow.detailTextLabel?.text = movieTitles[indexPath.row] as! String
-//        print("tableItems = \(tableItems)")
-        return tableRow
+        cell.textLabel?.text = moviePlots[indexPath.row] as! String
+        cell.detailTextLabel?.text = movieTitles[indexPath.row] as! String
+        cell.tapAction = { (cell) in
+            self.showAlertForRow(tableView.indexPathForCell(cell)!.row)
+        }
+        return cell
     }
     
     
@@ -49,8 +72,29 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         return moviePlots.count
     }
+        
+    func showAlertForRow(row: Int) {
+//        let item = tableView.cellForRowAtIndexPath(row)!.textLabel!.text!
+        print("button tapped on row \(row)")
+        let sharePlot = moviePlots[row]
+        let composer = TWTRComposer()
+        
+        composer.setText("I'm playing @emojisodes and I figured out what movie this is! \(sharePlot)")
+        
+        // Called from a UIViewController
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                print("Tweet composition cancelled")
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail", "place": "movieList"]).userId(uzer))
+            }
+            else {
+                print("Sending tweet!")
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success", "place": "movieList"]).userId(uzer))
+            }
+        }
+    }
     
-    @IBAction func finishUpButton(sender: AnyObject) {
+    func finishUpButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

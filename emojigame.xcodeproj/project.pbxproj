@@ -13,6 +13,7 @@
 		662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A41DF9B3B200761080 /* TwitterKit.framework */; };
 		662FF3A81DF9B3B200761080 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662FF3A51DF9B3B200761080 /* TwitterKitResources.bundle */; };
 		662FF3A91DF9B3B200761080 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A61DF9B3B200761080 /* TwitterCore.framework */; };
+		66487E711E072E7D001EA15A /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66487E701E072E7D001EA15A /* ButtonCell.swift */; };
 		6652963A1E00580C00854403 /* MovieListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665296391E00580C00854403 /* MovieListController.swift */; };
 		666765671D7267C4001A3872 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666765661D7267C4001A3872 /* GameKit.framework */; };
 		66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A3F1D3CFEDF008FEA44 /* ViewController.swift */; };
@@ -58,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		668E58311E02A462009BAC46 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66D1A5101DF91154002AA6BD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +96,7 @@
 		66374B6B1D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B761D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B881D2F007D007024B1 /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
+		66487E701E072E7D001EA15A /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCell.swift; path = emojigame/ButtonCell.swift; sourceTree = SOURCE_ROOT; };
 		665296391E00580C00854403 /* MovieListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieListController.swift; path = emojigame/MovieListController.swift; sourceTree = SOURCE_ROOT; };
 		666765661D7267C4001A3872 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		666765681D7267C9001A3872 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -105,6 +117,8 @@
 		66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/AnalyticsSwift/AnalyticsSwift.framework"; sourceTree = "<group>"; };
+		66CAD61F1E03FC0900FF3078 /* emojigame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = emojigame.entitlements; path = emojigame/emojigame.entitlements; sourceTree = SOURCE_ROOT; };
+		66CAD6251E03FDCE00FF3078 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		66DE19BD1D524317001E589B /* AddMovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieController.swift; sourceTree = SOURCE_ROOT; };
 		66DE19BF1D5245A2001E589B /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = SOURCE_ROOT; };
 		66DE19C11D524737001E589B /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = SOURCE_ROOT; };
@@ -185,6 +199,7 @@
 		66374B591D2EFF58007024B1 /* emojigame */ = {
 			isa = PBXGroup;
 			children = (
+				66CAD61F1E03FC0900FF3078 /* emojigame.entitlements */,
 				66DE19C31D524AC9001E589B /* Models */,
 				66695A431D3CFEDF008FEA44 /* Assets.xcassets */,
 				66695A3F1D3CFEDF008FEA44 /* ViewController.swift */,
@@ -198,6 +213,7 @@
 				662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */,
 				6695A05A1D71A47400DE855F /* StringScore.swift */,
 				6697E20A1DF838FF00542F8C /* OMDBAPIController.swift */,
+				66487E701E072E7D001EA15A /* ButtonCell.swift */,
 			);
 			name = emojigame;
 			path = "Fun Facts";
@@ -254,6 +270,7 @@
 				B5D67A37CC6D622059826725 /* Pods_emojigame.framework */,
 				1887844443B3D17646D5FB85 /* Pods_emojigameTests.framework */,
 				002F49035100D13BAD65C2A6 /* Pods_emojigameUITests.framework */,
+				66CAD6251E03FDCE00FF3078 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -286,6 +303,7 @@
 				03BF160BF2B9C5B471FE3EA8 /* [CP] Embed Pods Frameworks */,
 				5D40B820B6BAB537326DC9E9 /* [CP] Copy Pods Resources */,
 				66D1A5101DF91154002AA6BD /* Embed Frameworks */,
+				668E58311E02A462009BAC46 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -344,7 +362,7 @@
 		66374B4F1D2EFF58007024B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Adam Sigel";
 				TargetAttributes = {
@@ -582,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DE19BE1D524317001E589B /* AddMovieController.swift in Sources */,
+				66487E711E072E7D001EA15A /* ButtonCell.swift in Sources */,
 				662604BA1D6DDFBB001E0424 /* FirstTime2Controller.swift in Sources */,
 				662604B81D6DDFB1001E0424 /* FirstTimeController.swift in Sources */,
 				66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */,
@@ -744,6 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = emojigame/emojigame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -779,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = emojigame/emojigame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";

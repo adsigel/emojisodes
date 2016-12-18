@@ -186,12 +186,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     if (result == TWTRComposerResult.Cancelled) {
                         print("Tweet composition cancelled")
                         self.newButtonLabel.hidden = false
-                        self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail"]).userId(uzer))
+                        self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail", "place": "guessRight"]).userId(uzer))
                         self.nextRound()
                     }
                     else {
                         print("Sending tweet!")
-                        self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success"]).userId(uzer))
+                        self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success", "place": "guessRight"]).userId(uzer))
                         self.nextRound()
                     }
                 }
