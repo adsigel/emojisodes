@@ -32,6 +32,20 @@
 		66BDC9BF1DF9AC9C0018D8B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */; };
 		66BDC9C01DF9AC9C0018D8B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */; };
 		66C3AD3D1DF918C600BA1821 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */; };
+		66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CAD6251E03FDCE00FF3078 /* Messages.framework */; };
+		66D06F741E08C8BA008ACB40 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
+		66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */; };
+		66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F781E08C8BA008ACB40 /* Assets.xcassets */; };
+		66D06F7D1E08C8BA008ACB40 /* Emojisodes.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66D06F701E08C8BA008ACB40 /* Emojisodes.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66D06F821E08CA62008ACB40 /* EmojisodesStickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F811E08CA62008ACB40 /* EmojisodesStickersViewController.swift */; };
+		66D06FAE1E08CFF9008ACB40 /* Slipie_angel.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */; };
+		66D06FAF1E08CFF9008ACB40 /* Slipie_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */; };
+		66D06FB01E08CFF9008ACB40 /* Slipie_giggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */; };
+		66D06FB11E08CFF9008ACB40 /* Slipie_impatient.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */; };
+		66D06FB21E08CFF9008ACB40 /* Slipie_staring.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */; };
+		66D06FB31E08CFF9008ACB40 /* Slipie_thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */; };
+		66D06FB41E08CFF9008ACB40 /* Slipie_yawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */; };
+		66D06FC01E08D3F7008ACB40 /* StickerGIFs in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FBF1E08D3F7008ACB40 /* StickerGIFs */; };
 		66DE19BE1D524317001E589B /* AddMovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19BD1D524317001E589B /* AddMovieController.swift */; };
 		66DE19C01D5245A2001E589B /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19BF1D5245A2001E589B /* Movies.swift */; };
 		66DE19C21D524737001E589B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19C11D524737001E589B /* Users.swift */; };
@@ -56,6 +70,13 @@
 			remoteGlobalIDString = 66374B561D2EFF58007024B1;
 			remoteInfo = "Fun Facts";
 		};
+		66D06F7B1E08C8BA008ACB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66374B4F1D2EFF58007024B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D06F6F1E08C8BA008ACB40;
+			remoteInfo = Emojisodes;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				66D06F7D1E08C8BA008ACB40 /* Emojisodes.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +141,20 @@
 		66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/AnalyticsSwift/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		66CAD61F1E03FC0900FF3078 /* emojigame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = emojigame.entitlements; path = emojigame/emojigame.entitlements; sourceTree = SOURCE_ROOT; };
 		66CAD6251E03FDCE00FF3078 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		66D06F701E08C8BA008ACB40 /* Emojisodes.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emojisodes.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		66D06F761E08C8BA008ACB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		66D06F781E08C8BA008ACB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D06F7A1E08C8BA008ACB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D06F811E08CA62008ACB40 /* EmojisodesStickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojisodesStickersViewController.swift; sourceTree = "<group>"; };
+		66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_angel.png; sourceTree = "<group>"; };
+		66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_angry.png; sourceTree = "<group>"; };
+		66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_giggle.png; sourceTree = "<group>"; };
+		66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_impatient.png; sourceTree = "<group>"; };
+		66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_staring.png; sourceTree = "<group>"; };
+		66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_thumbs.png; sourceTree = "<group>"; };
+		66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_yawn.png; sourceTree = "<group>"; };
+		66D06FBF1E08D3F7008ACB40 /* StickerGIFs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StickerGIFs; sourceTree = "<group>"; };
 		66DE19BD1D524317001E589B /* AddMovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieController.swift; sourceTree = SOURCE_ROOT; };
 		66DE19BF1D5245A2001E589B /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = SOURCE_ROOT; };
 		66DE19C11D524737001E589B /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = SOURCE_ROOT; };
@@ -165,6 +201,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66D06F6D1E08C8BA008ACB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -180,6 +224,9 @@
 				66374B891D2F008D007024B1 /* Playgrounds */,
 				66374B6E1D2EFF58007024B1 /* emojigame Tests */,
 				66374B791D2EFF58007024B1 /* emojigame UITests */,
+				66D06FBF1E08D3F7008ACB40 /* StickerGIFs */,
+				66D06F951E08CFD5008ACB40 /* StickerPack */,
+				66D06F721E08C8BA008ACB40 /* Emojisodes */,
 				66374B581D2EFF58007024B1 /* Products */,
 				DFAD4520B08515FDCBEEE858 /* Pods */,
 				9125B2BA5E2246347F499BB2 /* Frameworks */,
@@ -192,6 +239,7 @@
 				66374B571D2EFF58007024B1 /* emojigame.app */,
 				66374B6B1D2EFF58007024B1 /* emojigame.xctest */,
 				66374B761D2EFF58007024B1 /* emojigame.xctest */,
+				66D06F701E08C8BA008ACB40 /* Emojisodes.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +290,32 @@
 				66EB93D41D329BF90081FF4F /* SwiftPlayground.playground */,
 			);
 			name = Playgrounds;
+			sourceTree = "<group>";
+		};
+		66D06F721E08C8BA008ACB40 /* Emojisodes */ = {
+			isa = PBXGroup;
+			children = (
+				66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */,
+				66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */,
+				66D06F781E08C8BA008ACB40 /* Assets.xcassets */,
+				66D06F7A1E08C8BA008ACB40 /* Info.plist */,
+				66D06F811E08CA62008ACB40 /* EmojisodesStickersViewController.swift */,
+			);
+			path = Emojisodes;
+			sourceTree = "<group>";
+		};
+		66D06F951E08CFD5008ACB40 /* StickerPack */ = {
+			isa = PBXGroup;
+			children = (
+				66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */,
+				66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */,
+				66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */,
+				66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */,
+				66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */,
+				66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */,
+				66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */,
+			);
+			name = StickerPack;
 			sourceTree = "<group>";
 		};
 		66DE19C31D524AC9001E589B /* Models */ = {
@@ -308,6 +382,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				66D06F7C1E08C8BA008ACB40 /* PBXTargetDependency */,
 			);
 			name = emojigame;
 			productName = "Fun Facts";
@@ -356,6 +431,23 @@
 			productReference = 66374B761D2EFF58007024B1 /* emojigame.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		66D06F6F1E08C8BA008ACB40 /* Emojisodes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D06F801E08C8BA008ACB40 /* Build configuration list for PBXNativeTarget "Emojisodes" */;
+			buildPhases = (
+				66D06F6C1E08C8BA008ACB40 /* Sources */,
+				66D06F6D1E08C8BA008ACB40 /* Frameworks */,
+				66D06F6E1E08C8BA008ACB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emojisodes;
+			productName = Emojisodes;
+			productReference = 66D06F701E08C8BA008ACB40 /* Emojisodes.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -390,6 +482,11 @@
 						LastSwiftMigration = 0800;
 						TestTargetID = 66374B561D2EFF58007024B1;
 					};
+					66D06F6F1E08C8BA008ACB40 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3KF5MT5476;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 66374B521D2EFF58007024B1 /* Build configuration list for PBXProject "emojigame" */;
@@ -408,6 +505,7 @@
 				66374B561D2EFF58007024B1 /* emojigame */,
 				66374B6A1D2EFF58007024B1 /* emojigameTests */,
 				66374B751D2EFF58007024B1 /* emojigameUITests */,
+				66D06F6F1E08C8BA008ACB40 /* Emojisodes */,
 			);
 		};
 /* End PBXProject section */
@@ -438,6 +536,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D06F6E1E08C8BA008ACB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */,
+				66D06FB21E08CFF9008ACB40 /* Slipie_staring.png in Resources */,
+				66D06FAF1E08CFF9008ACB40 /* Slipie_angry.png in Resources */,
+				66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */,
+				66D06FB31E08CFF9008ACB40 /* Slipie_thumbs.png in Resources */,
+				66D06FB41E08CFF9008ACB40 /* Slipie_yawn.png in Resources */,
+				66D06FB11E08CFF9008ACB40 /* Slipie_impatient.png in Resources */,
+				66D06FC01E08D3F7008ACB40 /* StickerGIFs in Resources */,
+				66D06FB01E08CFF9008ACB40 /* Slipie_giggle.png in Resources */,
+				66D06FAE1E08CFF9008ACB40 /* Slipie_angel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +744,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66D06F6C1E08C8BA008ACB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D06F821E08CA62008ACB40 /* EmojisodesStickersViewController.swift in Sources */,
+				66D06F741E08C8BA008ACB40 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -641,6 +765,11 @@
 			isa = PBXTargetDependency;
 			target = 66374B561D2EFF58007024B1 /* emojigame */;
 			targetProxy = 66374B771D2EFF58007024B1 /* PBXContainerItemProxy */;
+		};
+		66D06F7C1E08C8BA008ACB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66D06F6F1E08C8BA008ACB40 /* Emojisodes */;
+			targetProxy = 66D06F7B1E08C8BA008ACB40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -659,6 +788,14 @@
 				669FAC641D3D02ED00C92433 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D06F761E08C8BA008ACB40 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -761,6 +898,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0545858000F50DA2D4F4AAB7 /* Pods-emojigame.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = emojigame/emojigame.entitlements;
@@ -797,6 +935,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E9FBCD6FEC0F72F303693A4 /* Pods-emojigame.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = emojigame/emojigame.entitlements;
@@ -883,6 +1022,48 @@
 			};
 			name = Release;
 		};
+		66D06F7E1E08C8BA008ACB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KF5MT5476;
+				INFOPLIST_FILE = Emojisodes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamdsigel.emojisodes1.Emojisodes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		66D06F7F1E08C8BA008ACB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KF5MT5476;
+				INFOPLIST_FILE = Emojisodes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamdsigel.emojisodes1.Emojisodes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -921,6 +1102,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		66D06F801E08C8BA008ACB40 /* Build configuration list for PBXNativeTarget "Emojisodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D06F7E1E08C8BA008ACB40 /* Debug */,
+				66D06F7F1E08C8BA008ACB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
