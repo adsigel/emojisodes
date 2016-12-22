@@ -39,6 +39,9 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
             self.addToFirebase(uzer)
         }
         print("sup uzer \(uzer)")
+//        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
+//        defaults?.setObject(uzer, forKey: "uzer")
+//        defaults?.synchronize()
         analytics.enqueue(TrackMessageBuilder(event: "Game Loaded").userId(uzer))
     }
     
@@ -56,6 +59,9 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
             })
             lastLogin()
             delay(1.0) {
+//                var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
+//                defaults?.setObject(userDict, forKey: "userDict")
+//                defaults?.synchronize()
                 self.performSegueWithIdentifier("logIn", sender: sender)
                 self.analytics.flush()
             }

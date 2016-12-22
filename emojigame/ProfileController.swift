@@ -429,8 +429,14 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                     print("Found a match")
                     movieTitles.append(movieItem.title.capitalizedString)
                     moviePlots.append(movieItem.plot)
+                    var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
+                    defaults?.setObject(movieTitles, forKey: "movieTitles")
+                    defaults?.synchronize()
+                    print("synchronizing movieTitles as \(movieTitles)")
+
                 }
             }
+            
         })
     }
     

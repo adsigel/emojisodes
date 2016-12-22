@@ -4,15 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Emojisodes Messages.xcscheme</key>
+		<key>Emojisodes App.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>Emojisodes.xcscheme</key>
-		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Emojisodes Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>emojisodes.xcscheme</key>
 		<dict>

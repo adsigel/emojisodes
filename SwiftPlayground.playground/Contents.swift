@@ -7,20 +7,16 @@ import Foundation
 //var title = "d"
 var plot = ""
 
-var title = "The Day After Tomorrow"
+var newArray : Array = [String]()
 
-var spacelessString = title.stringByReplacingOccurrencesOfString(" ", withString: "+")
+var allMovies = ["the net", "demolition man", "psycho", "inception", "the shawshank redemption"]
 
-let urlPath = NSURL(string: "https://www.omdbapi.com/?t=\(spacelessString)&tomatoes=true&plot=short&type=movie")!
+var userMovies = ["the net", "demolition man"]
 
-//if title != "" && plot != "" {
-//    print("This is okay.")
-//} else {
-//    print("Something is missing.")
-//}
+for item in allMovies {
+    if userMovies.contains(item) {
+        newArray.append(item)
+    }
+}
 
-var movieValue = 105
-
-var myDict = ["movie1": "plot1", "movie2": "plot2", "movie3": "plot3"]
-
-myDict.count
+print(newArray)

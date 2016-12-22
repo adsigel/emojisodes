@@ -9,12 +9,25 @@
 import UIKit
 import Messages
 
+var movieTitles: Array = [String]()
+
 class MessagesViewController: MSMessagesAppViewController {
     
     var stickerBrowser: MSStickerBrowserView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
+        defaults?.synchronize()
+        
+        // Check for null value before setting
+        if let movieTitles = defaults!.stringForKey("movieTitles") {
+            print("MessagesViewController: synchronized movieTitles from \(movieTitles)")
+        }
+        else {
+            print("MessagesViewController: Cannot sychronize movieTitles")
+        }
+//        buildMovieList()
         // Do any additional setup after loading the view.
     }
     
@@ -32,6 +45,20 @@ class MessagesViewController: MSMessagesAppViewController {
             view.addSubview(stickerBrowser!)
         }
     }
+    
+//    func buildMovieList() {
+//        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
+//        defaults?.synchronize()
+//        
+//        // Check for null value before setting
+//        if let syncTitles = defaults!.stringForKey("movieTitles") {
+//            print("synchronized movieTitles as \(movieTitles)")
+//        }
+//        else {
+//            print("Cannot sychronize movieTitles")
+//        }
+//    }
+
 
     
     func willBecomeActive(with conversation: MSConversation) {

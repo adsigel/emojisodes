@@ -7,11 +7,8 @@
 //
 
 //  TODO:
-//  * Allow for fuzzy matching (e.g. ignore the word 'the') https://github.com/firebase/flashlight
-//  ? 3D touch to see a GIF from the movie
 //  * Refactor and move functions into the proper models/classes
 //  * Add levels and badges based on user score
-//  * Save excludeArray to user profile so they don't see the same movies in different sessions - FINISH TESTING
 
 import UIKit
 import Firebase

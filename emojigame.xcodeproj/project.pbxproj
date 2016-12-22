@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1F612259AF85DD6311F6C3 /* Pods_emojigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F49035100D13BAD65C2A6 /* Pods_emojigameUITests.framework */; };
+		4882659882B0F437D07AA490 /* Pods_emojigame_Emojisodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AEFF2C71701604D7281E83 /* Pods_emojigame_Emojisodes.framework */; };
+		660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */; };
+		660A6F1C1E0AF1EB005A14BC /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */; };
+		660A6F1D1E0AF1EB005A14BC /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */; };
+		660A6F1E1E0AF1EB005A14BC /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F191E0AF1EB005A14BC /* Lato-Light.ttf */; };
+		660A6F1F1E0AF1EB005A14BC /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F1A1E0AF1EB005A14BC /* Lato-Medium.ttf */; };
 		662604B81D6DDFB1001E0424 /* FirstTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662604B71D6DDFB1001E0424 /* FirstTimeController.swift */; };
 		662604BA1D6DDFBB001E0424 /* FirstTime2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */; };
 		662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A41DF9B3B200761080 /* TwitterKit.framework */; };
@@ -19,9 +24,6 @@
 		66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A3F1D3CFEDF008FEA44 /* ViewController.swift */; };
 		66695A481D3CFEDF008FEA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A411D3CFEDF008FEA44 /* AppDelegate.swift */; };
 		66695A4A1D3CFEDF008FEA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66695A431D3CFEDF008FEA44 /* Assets.xcassets */; };
-		669185671DF916BE00B62F34 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669185641DF916BE00B62F34 /* GoogleToolboxForMac.framework */; };
-		669185681DF916BE00B62F34 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669185651DF916BE00B62F34 /* GTMSessionFetcher.framework */; };
-		669185691DF916BE00B62F34 /* StringScore_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669185661DF916BE00B62F34 /* StringScore_Swift.framework */; };
 		6691FD4C1DF8FD150015BA00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6691FD4B1DF8FD150015BA00 /* GoogleService-Info.plist */; };
 		6695A05B1D71A47400DE855F /* StringScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695A05A1D71A47400DE855F /* StringScore.swift */; };
 		669656461D5B59F8002B516C /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 669656441D5B59F8002B516C /* Podfile.lock */; };
@@ -31,28 +33,23 @@
 		669FAC661D3D02ED00C92433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FAC631D3D02ED00C92433 /* Main.storyboard */; };
 		66BDC9BF1DF9AC9C0018D8B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */; };
 		66BDC9C01DF9AC9C0018D8B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */; };
-		66C3AD3D1DF918C600BA1821 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */; };
 		66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CAD6251E03FDCE00FF3078 /* Messages.framework */; };
 		66D06F741E08C8BA008ACB40 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
 		66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */; };
 		66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F781E08C8BA008ACB40 /* Assets.xcassets */; };
 		66D06F7D1E08C8BA008ACB40 /* Emojisodes.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66D06F701E08C8BA008ACB40 /* Emojisodes.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		66D06F821E08CA62008ACB40 /* EmojisodesStickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F811E08CA62008ACB40 /* EmojisodesStickersViewController.swift */; };
-		66D06FAE1E08CFF9008ACB40 /* Slipie_angel.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */; };
-		66D06FAF1E08CFF9008ACB40 /* Slipie_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */; };
-		66D06FB01E08CFF9008ACB40 /* Slipie_giggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */; };
-		66D06FB11E08CFF9008ACB40 /* Slipie_impatient.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */; };
-		66D06FB21E08CFF9008ACB40 /* Slipie_staring.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */; };
-		66D06FB31E08CFF9008ACB40 /* Slipie_thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */; };
-		66D06FB41E08CFF9008ACB40 /* Slipie_yawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */; };
-		66D06FC01E08D3F7008ACB40 /* StickerGIFs in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FBF1E08D3F7008ACB40 /* StickerGIFs */; };
+		66D06FC41E094DF0008ACB40 /* demolition man.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FC21E094DF0008ACB40 /* demolition man.gif */; };
+		66D06FC51E094DF0008ACB40 /* the net.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66D06FC31E094DF0008ACB40 /* the net.gif */; };
 		66DE19BE1D524317001E589B /* AddMovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19BD1D524317001E589B /* AddMovieController.swift */; };
 		66DE19C01D5245A2001E589B /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19BF1D5245A2001E589B /* Movies.swift */; };
 		66DE19C21D524737001E589B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE19C11D524737001E589B /* Users.swift */; };
+		66F27F0F1E0AA188000092A7 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F27F0E1E0AA188000092A7 /* AnalyticsSwift.framework */; };
 		66F8FD5E1D5B5CCD0027E031 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F8FD5D1D5B5CCD0027E031 /* LoginController.swift */; };
 		66F8FD661D6CE20A0027E031 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F8FD651D6CE20A0027E031 /* ProfileController.swift */; };
-		6D545603B582FD13D2C14DB3 /* Pods_emojigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1887844443B3D17646D5FB85 /* Pods_emojigameTests.framework */; };
-		B6CCC4616CA3B5AE44D32569 /* Pods_emojigame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D67A37CC6D622059826725 /* Pods_emojigame.framework */; };
+		D55C807550C571400C604D2A /* Pods_emojigame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C9664DB8511DD741043108 /* Pods_emojigame.framework */; };
+		DEE3638A6A229C46B6FE3370 /* Pods_emojigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD620813E79468CA6CDA94F /* Pods_emojigameTests.framework */; };
+		F966815297AC9028FE7AF47B /* Pods_emojigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D95A7A1150FC0437FC0A96 /* Pods_emojigameUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,11 +101,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		002F49035100D13BAD65C2A6 /* Pods_emojigameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0545858000F50DA2D4F4AAB7 /* Pods-emojigame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame/Pods-emojigame.debug.xcconfig"; sourceTree = "<group>"; };
-		1887844443B3D17646D5FB85 /* Pods_emojigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D95A7A1150FC0437FC0A96 /* Pods_emojigameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AEFF2C71701604D7281E83 /* Pods_emojigame_Emojisodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigame_Emojisodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9FBCD6FEC0F72F303693A4 /* Pods-emojigame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame/Pods-emojigame.release.xcconfig"; sourceTree = "<group>"; };
+		411F2A33DF9891106E504F6C /* Pods-emojigame-Emojisodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame-Emojisodes.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame-Emojisodes/Pods-emojigame-Emojisodes.release.xcconfig"; sourceTree = "<group>"; };
+		54C9664DB8511DD741043108 /* Pods_emojigame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D72561C58CDB841A9742E77 /* Pods-emojigameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameUITests/Pods-emojigameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = SOURCE_ROOT; };
+		660A6F191E0AF1EB005A14BC /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		660A6F1A1E0AF1EB005A14BC /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = SOURCE_ROOT; };
 		662604B71D6DDFB1001E0424 /* FirstTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTimeController.swift; path = emojigame/FirstTimeController.swift; sourceTree = SOURCE_ROOT; };
 		662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTime2Controller.swift; path = emojigame/FirstTime2Controller.swift; sourceTree = SOURCE_ROOT; };
 		662FF3A41DF9B3B200761080 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
@@ -126,9 +130,6 @@
 		66695A411D3CFEDF008FEA44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = emojigame/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		66695A421D3CFEDF008FEA44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = emojigame/Info.plist; sourceTree = SOURCE_ROOT; };
 		66695A431D3CFEDF008FEA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = emojigame/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		669185641DF916BE00B62F34 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
-		669185651DF916BE00B62F34 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
-		669185661DF916BE00B62F34 /* StringScore_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StringScore_Swift.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/StringScore_Swift/StringScore_Swift.framework"; sourceTree = "<group>"; };
 		6691FD4B1DF8FD150015BA00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6695A05A1D71A47400DE855F /* StringScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringScore.swift; sourceTree = SOURCE_ROOT; };
 		669656441D5B59F8002B516C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
@@ -136,9 +137,9 @@
 		6697E20A1DF838FF00542F8C /* OMDBAPIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBAPIController.swift; sourceTree = SOURCE_ROOT; };
 		669FAC621D3D02ED00C92433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = emojigame/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669FAC641D3D02ED00C92433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = emojigame/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66B3F9A31E0A15DD00077ADD /* Emojisodes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emojisodes.entitlements; sourceTree = "<group>"; };
 		66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/emojigame-ejsxsoxuhrasnjgqdmxfbblmcrxe/Build/Products/Debug-iphonesimulator/AnalyticsSwift/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		66CAD61F1E03FC0900FF3078 /* emojigame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = emojigame.entitlements; path = emojigame/emojigame.entitlements; sourceTree = SOURCE_ROOT; };
 		66CAD6251E03FDCE00FF3078 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		66D06F701E08C8BA008ACB40 /* Emojisodes.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emojisodes.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,23 +148,22 @@
 		66D06F781E08C8BA008ACB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D06F7A1E08C8BA008ACB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D06F811E08CA62008ACB40 /* EmojisodesStickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojisodesStickersViewController.swift; sourceTree = "<group>"; };
-		66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_angel.png; sourceTree = "<group>"; };
-		66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_angry.png; sourceTree = "<group>"; };
-		66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_giggle.png; sourceTree = "<group>"; };
-		66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_impatient.png; sourceTree = "<group>"; };
-		66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_staring.png; sourceTree = "<group>"; };
-		66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_thumbs.png; sourceTree = "<group>"; };
-		66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipie_yawn.png; sourceTree = "<group>"; };
-		66D06FBF1E08D3F7008ACB40 /* StickerGIFs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StickerGIFs; sourceTree = "<group>"; };
+		66D06FC21E094DF0008ACB40 /* demolition man.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demolition man.gif"; sourceTree = "<group>"; };
+		66D06FC31E094DF0008ACB40 /* the net.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the net.gif"; sourceTree = "<group>"; };
+		66D06FC61E0956B3008ACB40 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-doeqvqscdfexrpdywczrmsbfhgoz/Build/Products/Debug-iphonesimulator/AnalyticsSwift/AnalyticsSwift.framework"; sourceTree = "<group>"; };
+		66D06FC71E0956B3008ACB40 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-doeqvqscdfexrpdywczrmsbfhgoz/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		66D06FC81E0956B3008ACB40 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-doeqvqscdfexrpdywczrmsbfhgoz/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
 		66DE19BD1D524317001E589B /* AddMovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieController.swift; sourceTree = SOURCE_ROOT; };
 		66DE19BF1D5245A2001E589B /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = SOURCE_ROOT; };
 		66DE19C11D524737001E589B /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = SOURCE_ROOT; };
 		66EB93D41D329BF90081FF4F /* SwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftPlayground.playground; sourceTree = "<group>"; };
+		66F27F0E1E0AA188000092A7 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-doeqvqscdfexrpdywczrmsbfhgoz/Build/Products/Debug-iphoneos/AnalyticsSwift/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		66F8FD5D1D5B5CCD0027E031 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = SOURCE_ROOT; };
 		66F8FD651D6CE20A0027E031 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = emojigame/ProfileController.swift; sourceTree = SOURCE_ROOT; };
 		73CB3D8F9695F571160EA3D7 /* Pods-emojigameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameUITests/Pods-emojigameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AD620813E79468CA6CDA94F /* Pods_emojigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8896F5A016D5532EC4DA73A4 /* Pods-emojigameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests.release.xcconfig"; sourceTree = "<group>"; };
-		B5D67A37CC6D622059826725 /* Pods_emojigame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB470240211AF5C894E9E2D /* Pods-emojigame-Emojisodes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame-Emojisodes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame-Emojisodes/Pods-emojigame-Emojisodes.debug.xcconfig"; sourceTree = "<group>"; };
 		E877D07DED494E75DE7756D4 /* Pods-emojigameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,16 +172,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C3AD3D1DF918C600BA1821 /* AnalyticsSwift.framework in Frameworks */,
-				669185671DF916BE00B62F34 /* GoogleToolboxForMac.framework in Frameworks */,
-				669185681DF916BE00B62F34 /* GTMSessionFetcher.framework in Frameworks */,
 				662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */,
 				662FF3A91DF9B3B200761080 /* TwitterCore.framework in Frameworks */,
-				669185691DF916BE00B62F34 /* StringScore_Swift.framework in Frameworks */,
 				666765671D7267C4001A3872 /* GameKit.framework in Frameworks */,
 				66BDC9BF1DF9AC9C0018D8B7 /* Fabric.framework in Frameworks */,
 				66BDC9C01DF9AC9C0018D8B7 /* Crashlytics.framework in Frameworks */,
-				B6CCC4616CA3B5AE44D32569 /* Pods_emojigame.framework in Frameworks */,
+				D55C807550C571400C604D2A /* Pods_emojigame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D545603B582FD13D2C14DB3 /* Pods_emojigameTests.framework in Frameworks */,
+				DEE3638A6A229C46B6FE3370 /* Pods_emojigameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D1F612259AF85DD6311F6C3 /* Pods_emojigameUITests.framework in Frameworks */,
+				F966815297AC9028FE7AF47B /* Pods_emojigameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,13 +201,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F27F0F1E0AA188000092A7 /* AnalyticsSwift.framework in Frameworks */,
 				66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */,
+				4882659882B0F437D07AA490 /* Pods_emojigame_Emojisodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660A6F151E0AF1A4005A14BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */,
+				660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */,
+				660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */,
+				660A6F191E0AF1EB005A14BC /* Lato-Light.ttf */,
+				660A6F1A1E0AF1EB005A14BC /* Lato-Medium.ttf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		66374B4E1D2EFF58007024B1 = {
 			isa = PBXGroup;
 			children = (
@@ -224,8 +234,7 @@
 				66374B891D2F008D007024B1 /* Playgrounds */,
 				66374B6E1D2EFF58007024B1 /* emojigame Tests */,
 				66374B791D2EFF58007024B1 /* emojigame UITests */,
-				66D06FBF1E08D3F7008ACB40 /* StickerGIFs */,
-				66D06F951E08CFD5008ACB40 /* StickerPack */,
+				66D06FC11E094DF0008ACB40 /* StickerGIFs */,
 				66D06F721E08C8BA008ACB40 /* Emojisodes */,
 				66374B581D2EFF58007024B1 /* Products */,
 				DFAD4520B08515FDCBEEE858 /* Pods */,
@@ -247,6 +256,7 @@
 		66374B591D2EFF58007024B1 /* emojigame */ = {
 			isa = PBXGroup;
 			children = (
+				660A6F151E0AF1A4005A14BC /* Supporting Files */,
 				66CAD61F1E03FC0900FF3078 /* emojigame.entitlements */,
 				66DE19C31D524AC9001E589B /* Models */,
 				66695A431D3CFEDF008FEA44 /* Assets.xcassets */,
@@ -295,6 +305,7 @@
 		66D06F721E08C8BA008ACB40 /* Emojisodes */ = {
 			isa = PBXGroup;
 			children = (
+				66B3F9A31E0A15DD00077ADD /* Emojisodes.entitlements */,
 				66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */,
 				66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */,
 				66D06F781E08C8BA008ACB40 /* Assets.xcassets */,
@@ -304,18 +315,13 @@
 			path = Emojisodes;
 			sourceTree = "<group>";
 		};
-		66D06F951E08CFD5008ACB40 /* StickerPack */ = {
+		66D06FC11E094DF0008ACB40 /* StickerGIFs */ = {
 			isa = PBXGroup;
 			children = (
-				66D06FA61E08CFF9008ACB40 /* Slipie_angel.png */,
-				66D06FA71E08CFF9008ACB40 /* Slipie_angry.png */,
-				66D06FA81E08CFF9008ACB40 /* Slipie_giggle.png */,
-				66D06FA91E08CFF9008ACB40 /* Slipie_impatient.png */,
-				66D06FAA1E08CFF9008ACB40 /* Slipie_staring.png */,
-				66D06FAB1E08CFF9008ACB40 /* Slipie_thumbs.png */,
-				66D06FAC1E08CFF9008ACB40 /* Slipie_yawn.png */,
+				66D06FC21E094DF0008ACB40 /* demolition man.gif */,
+				66D06FC31E094DF0008ACB40 /* the net.gif */,
 			);
-			name = StickerPack;
+			path = StickerGIFs;
 			sourceTree = "<group>";
 		};
 		66DE19C31D524AC9001E589B /* Models */ = {
@@ -330,21 +336,22 @@
 		9125B2BA5E2246347F499BB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66F27F0E1E0AA188000092A7 /* AnalyticsSwift.framework */,
+				66D06FC61E0956B3008ACB40 /* AnalyticsSwift.framework */,
+				66D06FC71E0956B3008ACB40 /* GoogleToolboxForMac.framework */,
+				66D06FC81E0956B3008ACB40 /* GTMSessionFetcher.framework */,
 				662FF3A41DF9B3B200761080 /* TwitterKit.framework */,
 				662FF3A51DF9B3B200761080 /* TwitterKitResources.bundle */,
 				662FF3A61DF9B3B200761080 /* TwitterCore.framework */,
 				66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */,
 				66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */,
-				66C3AD3C1DF918C600BA1821 /* AnalyticsSwift.framework */,
-				669185641DF916BE00B62F34 /* GoogleToolboxForMac.framework */,
-				669185651DF916BE00B62F34 /* GTMSessionFetcher.framework */,
-				669185661DF916BE00B62F34 /* StringScore_Swift.framework */,
 				666765681D7267C9001A3872 /* SystemConfiguration.framework */,
 				666765661D7267C4001A3872 /* GameKit.framework */,
-				B5D67A37CC6D622059826725 /* Pods_emojigame.framework */,
-				1887844443B3D17646D5FB85 /* Pods_emojigameTests.framework */,
-				002F49035100D13BAD65C2A6 /* Pods_emojigameUITests.framework */,
 				66CAD6251E03FDCE00FF3078 /* Messages.framework */,
+				54C9664DB8511DD741043108 /* Pods_emojigame.framework */,
+				32AEFF2C71701604D7281E83 /* Pods_emojigame_Emojisodes.framework */,
+				7AD620813E79468CA6CDA94F /* Pods_emojigameTests.framework */,
+				27D95A7A1150FC0437FC0A96 /* Pods_emojigameUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,6 +365,8 @@
 				8896F5A016D5532EC4DA73A4 /* Pods-emojigameTests.release.xcconfig */,
 				5D72561C58CDB841A9742E77 /* Pods-emojigameUITests.debug.xcconfig */,
 				73CB3D8F9695F571160EA3D7 /* Pods-emojigameUITests.release.xcconfig */,
+				CBB470240211AF5C894E9E2D /* Pods-emojigame-Emojisodes.debug.xcconfig */,
+				411F2A33DF9891106E504F6C /* Pods-emojigame-Emojisodes.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -435,9 +444,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66D06F801E08C8BA008ACB40 /* Build configuration list for PBXNativeTarget "Emojisodes" */;
 			buildPhases = (
+				95324E31E6FAB94456E7767D /* [CP] Check Pods Manifest.lock */,
 				66D06F6C1E08C8BA008ACB40 /* Sources */,
 				66D06F6D1E08C8BA008ACB40 /* Frameworks */,
 				66D06F6E1E08C8BA008ACB40 /* Resources */,
+				244DCE7E7B869FAB3EECCE10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,6 +475,9 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -486,6 +500,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3KF5MT5476;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -515,12 +534,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660A6F1D1E0AF1EB005A14BC /* Lato-Heavy.ttf in Resources */,
+				660A6F1F1E0AF1EB005A14BC /* Lato-Medium.ttf in Resources */,
 				669656461D5B59F8002B516C /* Podfile.lock in Resources */,
 				662FF3A81DF9B3B200761080 /* TwitterKitResources.bundle in Resources */,
+				660A6F1E1E0AF1EB005A14BC /* Lato-Light.ttf in Resources */,
 				669656471D5B59F8002B516C /* Podfile in Resources */,
 				669FAC651D3D02ED00C92433 /* LaunchScreen.storyboard in Resources */,
+				660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */,
 				669FAC661D3D02ED00C92433 /* Main.storyboard in Resources */,
 				66695A4A1D3CFEDF008FEA44 /* Assets.xcassets in Resources */,
+				660A6F1C1E0AF1EB005A14BC /* Lato-Bold.ttf in Resources */,
 				6691FD4C1DF8FD150015BA00 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,15 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */,
-				66D06FB21E08CFF9008ACB40 /* Slipie_staring.png in Resources */,
-				66D06FAF1E08CFF9008ACB40 /* Slipie_angry.png in Resources */,
+				66D06FC51E094DF0008ACB40 /* the net.gif in Resources */,
 				66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */,
-				66D06FB31E08CFF9008ACB40 /* Slipie_thumbs.png in Resources */,
-				66D06FB41E08CFF9008ACB40 /* Slipie_yawn.png in Resources */,
-				66D06FB11E08CFF9008ACB40 /* Slipie_impatient.png in Resources */,
-				66D06FC01E08D3F7008ACB40 /* StickerGIFs in Resources */,
-				66D06FB01E08CFF9008ACB40 /* Slipie_giggle.png in Resources */,
-				66D06FAE1E08CFF9008ACB40 /* Slipie_angel.png in Resources */,
+				66D06FC41E094DF0008ACB40 /* demolition man.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +605,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		244DCE7E7B869FAB3EECCE10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emojigame-Emojisodes/Pods-emojigame-Emojisodes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2F3E68202A4B48550EF0EA17 /* [CP] Check Pods Manifest.lock */ = {
@@ -660,6 +693,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95324E31E6FAB94456E7767D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		ADBB5F57E6BC1204D6FF7392 /* [CP] Check Pods Manifest.lock */ = {
@@ -1024,11 +1072,13 @@
 		};
 		66D06F7E1E08C8BA008ACB40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB470240211AF5C894E9E2D /* Pods-emojigame-Emojisodes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Emojisodes/Emojisodes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KF5MT5476;
@@ -1045,11 +1095,13 @@
 		};
 		66D06F7F1E08C8BA008ACB40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411F2A33DF9891106E504F6C /* Pods-emojigame-Emojisodes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Emojisodes/Emojisodes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KF5MT5476;
@@ -1110,6 +1162,7 @@
 				66D06F7F1E08C8BA008ACB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,9 +6,9 @@ target 'emojigame' do
   use_frameworks!
 
   # Pods for emojigame
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
-  pod 'Firebase/Auth'
+  pod 'Firebase/Core', '~> 3.7.0'
+  pod 'Firebase/Database', '~> 3.7.0'
+  pod 'Firebase/Auth', '~> 3.7.0'
   pod 'AnalyticsSwift', '~> 0.2.0'
   # pod 'Segment-Amplitude'
   # pod 'Amplitude-iOS', '~> 3.7.0'
@@ -23,6 +23,15 @@ target 'emojigame' do
   target 'emojigameUITests' do
     inherit! :search_paths
     # Pods for testing
+  end
+
+  target 'Emojisodes' do
+
+    pod 'Firebase/Core', '~> 3.7.0'
+    pod 'Firebase/Database', '~> 3.7.0'
+    pod 'AnalyticsSwift', '~> 0.2.0'
+    pod 'StringScore_Swift'
+
   end
 
 end
