@@ -9,25 +9,21 @@
 import UIKit
 import Messages
 
-var movieTitles: Array = [String]()
+var extMovies: Array = [String]()
+var extUzer : String = ""
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testLabel2: UILabel!
+    
     var stickerBrowser: MSStickerBrowserView?
+    var defaults: NSUserDefaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
-        defaults?.synchronize()
-        
-        // Check for null value before setting
-        if let movieTitles = defaults!.stringForKey("movieTitles") {
-            print("MessagesViewController: synchronized movieTitles from \(movieTitles)")
-        }
-        else {
-            print("MessagesViewController: Cannot sychronize movieTitles")
-        }
-//        buildMovieList()
+        buildMovieList()
+        syncDefaults()
         // Do any additional setup after loading the view.
     }
     
@@ -39,25 +35,45 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Conversation Handling
     
     private func setupStickerBrowser(){
-        if stickerBrowser == nil{
+
+        if stickerBrowser == nil {
             //1. Sticker Browser Initialization
             stickerBrowser = MSStickerBrowserView()
             view.addSubview(stickerBrowser!)
         }
     }
     
-//    func buildMovieList() {
-//        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
-//        defaults?.synchronize()
-//        
-//        // Check for null value before setting
-//        if let syncTitles = defaults!.stringForKey("movieTitles") {
-//            print("synchronized movieTitles as \(movieTitles)")
+    func syncDefaults() {
+        if let extUzer = defaults.stringForKey("extensionUzer") {
+            print("extUzer is \(extUzer)")
+        } else {
+            print("no extUzer to be found here")
+        }
+        if let extMovies = defaults.stringArrayForKey("extensionMovies") {
+            print("extMovies is \(extMovies)")
+        } else {
+            print("no extMovies to be found here")
+        }
+    }
+    
+    func buildMovieList() {
+//        var defaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")
+//        defaults!.objectForKey("extensionMovieList")
+//        defaults!.objectForKey("extensionUzer")
+        // Check for null value before setting
+//        if let movieTitles = defaults!.stringForKey("extensionMovieList") {
+//            print("MessagesViewController: synchronized extensionMovieList from \(movieTitles)")
 //        }
 //        else {
-//            print("Cannot sychronize movieTitles")
+//            print("MessagesViewController: Cannot sychronize movieTitles")
 //        }
-//    }
+//        if let uzer = defaults!.stringForKey("extensionUzer") {
+//            print("method 2: synchronized extensionUzer from \(uzer)")
+//        }
+//        else {
+//            print("method 2: Cannot synchronize uzer")
+//        }
+    }
 
 
     
@@ -66,6 +82,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // This will happen when the extension is about to present UI.
         
         // Use this method to configure the extension and restore previously stored state.
+        setupStickerBrowser()
     }
     
     func didResignActive(with conversation: MSConversation) {

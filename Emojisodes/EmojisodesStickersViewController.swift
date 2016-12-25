@@ -15,24 +15,14 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
     var gifArray : [String] = []
     // TODO: Make allMovies a dynamic array based on what's in the file manager
     var allMovies = ["the net", "demolition man"]
-    var userMovies = movieTitles
+    var userMovies = [String]()
     
     var stickerNames : [String] = []
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
-        defaults?.synchronize()
-        
-        // Check for null value before setting
-        if let movieTitles = defaults!.stringForKey("movieTitles") {
-            print("EmojisodesStickerViewController: synchronized movieTitles from \(movieTitles)")
-        }
-        else {
-            print("EmojisodesStickerViewController: Cannot synchronize movieTitles")
-        }
-//        movieTitles = ["the net"]
-        userMovies = movieTitles
+        extMovies = ["the net"]
+        userMovies = extMovies
 //        getAllStickers()
         determineStickers()
         self.stickers = [MSSticker]()
@@ -58,7 +48,7 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
     
     func getAllStickers() -> [String] {
         // TODO: Fix this function, should build the array allStickers based on the GIFs in the file manager
-        var gifArray = [String]()
+//        var gifArray = [String]()
         let fileManager = NSFileManager.defaultManager()
 //        guard let url = NSBundle.mainBundle().URLForResource(nil, withExtension: "gif") else {
 //            fatalError("resource does not exist")

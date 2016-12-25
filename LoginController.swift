@@ -24,6 +24,7 @@ let userRef = ref.child("users")
 var newUser = String()
 var gcAuth : Bool = false
 var alias = ""
+var defaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")
 
 class LoginController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     
@@ -38,10 +39,6 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
         self.authenticateLocalPlayer{ (uzer) -> () in
             self.addToFirebase(uzer)
         }
-        print("sup uzer \(uzer)")
-//        var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
-//        defaults?.setObject(uzer, forKey: "uzer")
-//        defaults?.synchronize()
         analytics.enqueue(TrackMessageBuilder(event: "Game Loaded").userId(uzer))
     }
     
@@ -100,6 +97,8 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
                 uzer = UIDevice.currentDevice().identifierForVendor!.UUIDString
                 alias = ""
                 print("uzer is \(uzer)")
+                defaults?.setObject(uzer, forKey: "extensionUzer")
+                print("synchronizing extensionUzer as \(uzer)")
             } else {
                 print((GKLocalPlayer.localPlayer().authenticated))
                 gcAuth = true
@@ -114,6 +113,8 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
                     alias = localPlayer.alias!
                 }
                 print("uzer is \(uzer)")
+                defaults?.setObject(uzer, forKey: "extensionUzer")
+                print("synchronizing extensionUzer as \(uzer)")
             }
             completion(uzer)
         }

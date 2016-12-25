@@ -78,7 +78,7 @@ class FirstTime2Controller: UIViewController, UITextFieldDelegate, UINavigationC
         let guess = guessTextField.text?.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         if guess == "titanic" {
             let guessRightAlert = UIAlertController(title: "You got it!", message: "You're ready to play Emojisodes now!", preferredStyle: UIAlertControllerStyle.Alert)
-            let OKAction = UIAlertAction(title: "I'm Ready", style: .Default) { (action) in
+            let OKAction = UIAlertAction(title: "Let's do it", style: .Default) { (action) in
                 userRef.child(uzer).child("new_in_town").setValue("false")
                 self.analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Guess").properties(["outcome": "correct"]).userId(uzer))
                 self.analytics.flush()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376DD4C31E0EA02D00423F13 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
 		4882659882B0F437D07AA490 /* Pods_emojigame_Emojisodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AEFF2C71701604D7281E83 /* Pods_emojigame_Emojisodes.framework */; };
 		660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */; };
 		660A6F1C1E0AF1EB005A14BC /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */; };
@@ -34,7 +35,6 @@
 		66BDC9BF1DF9AC9C0018D8B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BD1DF9AC9C0018D8B7 /* Fabric.framework */; };
 		66BDC9C01DF9AC9C0018D8B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BDC9BE1DF9AC9C0018D8B7 /* Crashlytics.framework */; };
 		66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CAD6251E03FDCE00FF3078 /* Messages.framework */; };
-		66D06F741E08C8BA008ACB40 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
 		66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F751E08C8BA008ACB40 /* MainInterface.storyboard */; };
 		66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D06F781E08C8BA008ACB40 /* Assets.xcassets */; };
 		66D06F7D1E08C8BA008ACB40 /* Emojisodes.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66D06F701E08C8BA008ACB40 /* Emojisodes.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -796,8 +796,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376DD4C31E0EA02D00423F13 /* MessagesViewController.swift in Sources */,
 				66D06F821E08CA62008ACB40 /* EmojisodesStickersViewController.swift in Sources */,
-				66D06F741E08C8BA008ACB40 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
