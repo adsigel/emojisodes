@@ -429,7 +429,7 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                     print("Found a match")
                     movieTitles.append(movieItem.title.capitalizedString)
                     moviePlots.append(movieItem.plot)
-                    defaults?.setObject(movieTitles, forKey: "extensionMovies")
+                    defaults?.setObject(movieTitles as [String], forKey: "extensionMovies")
                     defaults?.synchronize()
                     print("synchronizing extMovies as \(movieTitles)")
                 }

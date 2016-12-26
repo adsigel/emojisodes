@@ -8,8 +8,9 @@
 
 import UIKit
 import Messages
+import AnalyticsSwift
 
-var extMovies: Array = [String]()
+var extMovies : Array = [String]()
 var extUzer : String = ""
 
 class MessagesViewController: MSMessagesAppViewController {
@@ -17,6 +18,7 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var testLabel2: UILabel!
     
+    var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     var stickerBrowser: MSStickerBrowserView?
     var defaults: NSUserDefaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")!
     
@@ -43,14 +45,20 @@ class MessagesViewController: MSMessagesAppViewController {
         }
     }
     
+    @IBAction func testButton(sender: AnyObject) {
+        EmojisodesStickersViewController().determineStickers()
+        analytics.enqueue(TrackMessageBuilder(event: "Test").userId(extUzer))
+    }
+    
     func syncDefaults() {
         if let extUzer = defaults.stringForKey("extensionUzer") {
             print("extUzer is \(extUzer)")
         } else {
             print("no extUzer to be found here")
         }
-        if let extMovies = defaults.stringArrayForKey("extensionMovies") {
+        if let extMovies = defaults.arrayForKey("extensionMovies") {
             print("extMovies is \(extMovies)")
+            print("extMovies is of type \(extMovies.dynamicType)")
         } else {
             print("no extMovies to be found here")
         }
@@ -83,6 +91,8 @@ class MessagesViewController: MSMessagesAppViewController {
         
         // Use this method to configure the extension and restore previously stored state.
         setupStickerBrowser()
+        analytics.enqueue(TrackMessageBuilder(event: "Opened Message Extension").userId(extUzer))
+        analytics.flush()
     }
     
     func didResignActive(with conversation: MSConversation) {
@@ -104,6 +114,8 @@ class MessagesViewController: MSMessagesAppViewController {
     
     func didStartSending(_ message: MSMessage, conversation: MSConversation) {
         // Called when the user taps the send button.
+        analytics.enqueue(TrackMessageBuilder(event: "Sent Message").userId(extUzer))
+        analytics.flush()
     }
     
     func didCancelSending(_ message: MSMessage, conversation: MSConversation) {

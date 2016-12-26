@@ -4,17 +4,20 @@ import UIKit
 import Foundation
 
 
-//var title = "d"
 var plot = ""
 
 var newArray : Array = [String]()
 
 var allMovies = ["the net", "demolition man", "psycho", "inception", "the shawshank redemption"]
 
-var userMovies = ["the net", "demolition man"]
+var extMovies = ["The Net", "Demolition Man", "Aladdin"]
+
+var movie = "the net"
+
+movie.capitalized
 
 for item in allMovies {
-    if userMovies.contains(item) {
+    if extMovies.contains(item.capitalized) {
         newArray.append(item)
     }
 }

@@ -27,6 +27,14 @@
                                     <segue destination="Wca-ep-AMJ" kind="embed" id="hZZ-tc-P6e"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxy-IM-uqP">
+                                <rect key="frame" x="137" y="213" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="edd-Sp-O0B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
