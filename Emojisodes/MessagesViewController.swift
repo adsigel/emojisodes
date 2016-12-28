@@ -15,16 +15,12 @@ var extUzer : String = ""
 
 class MessagesViewController: MSMessagesAppViewController {
     
-    @IBOutlet weak var testLabel: UILabel!
-    @IBOutlet weak var testLabel2: UILabel!
-    
     var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     var stickerBrowser: MSStickerBrowserView?
     var defaults: NSUserDefaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildMovieList()
         syncDefaults()
         // Do any additional setup after loading the view.
     }
@@ -45,11 +41,6 @@ class MessagesViewController: MSMessagesAppViewController {
         }
     }
     
-    @IBAction func testButton(sender: AnyObject) {
-        EmojisodesStickersViewController().determineStickers()
-        analytics.enqueue(TrackMessageBuilder(event: "Test").userId(extUzer))
-    }
-    
     func syncDefaults() {
         if let extUzer = defaults.stringForKey("extensionUzer") {
             print("extUzer is \(extUzer)")
@@ -63,26 +54,6 @@ class MessagesViewController: MSMessagesAppViewController {
             print("no extMovies to be found here")
         }
     }
-    
-    func buildMovieList() {
-//        var defaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")
-//        defaults!.objectForKey("extensionMovieList")
-//        defaults!.objectForKey("extensionUzer")
-        // Check for null value before setting
-//        if let movieTitles = defaults!.stringForKey("extensionMovieList") {
-//            print("MessagesViewController: synchronized extensionMovieList from \(movieTitles)")
-//        }
-//        else {
-//            print("MessagesViewController: Cannot sychronize movieTitles")
-//        }
-//        if let uzer = defaults!.stringForKey("extensionUzer") {
-//            print("method 2: synchronized extensionUzer from \(uzer)")
-//        }
-//        else {
-//            print("method 2: Cannot synchronize uzer")
-//        }
-    }
-
 
     
     func willBecomeActive(with conversation: MSConversation) {
@@ -103,6 +74,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to release shared resources, save user data, invalidate timers,
         // and store enough state information to restore your extension to its current state
         // in case it is terminated later.
+        analytics.flush()
     }
    
     func didReceive(_ message: MSMessage, conversation: MSConversation) {

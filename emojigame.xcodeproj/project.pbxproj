@@ -26,6 +26,16 @@
 		3702CF791E115A8400599040 /* ace ventura pet detective.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF731E115A8400599040 /* ace ventura pet detective.gif */; };
 		3702CF7A1E115A8400599040 /* face off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF741E115A8400599040 /* face off.gif */; };
 		3702CF7B1E115A8400599040 /* big.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF751E115A8400599040 /* big.gif */; };
+		3702CF851E116F7500599040 /* father of the bride.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7C1E116F7500599040 /* father of the bride.gif */; };
+		3702CF861E116F7500599040 /* my big fat greek wedding.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */; };
+		3702CF871E116F7500599040 /* the dark knight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7E1E116F7500599040 /* the dark knight.gif */; };
+		3702CF881E116F7500599040 /* national treasure.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7F1E116F7500599040 /* national treasure.gif */; };
+		3702CF891E116F7500599040 /* sherlock holmes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF801E116F7500599040 /* sherlock holmes.jpg */; };
+		3702CF8A1E116F7500599040 /* dirty dancing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF811E116F7500599040 /* dirty dancing.gif */; };
+		3702CF8B1E116F7500599040 /* ghostbusters.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF821E116F7500599040 /* ghostbusters.gif */; };
+		3702CF8C1E116F7500599040 /* the usual suspects.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF831E116F7500599040 /* the usual suspects.gif */; };
+		3702CF8D1E116F7500599040 /* the matrix.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF841E116F7500599040 /* the matrix.gif */; };
+		3702CF8F1E12AFCC00599040 /* happy gilmore.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF8E1E12AFCC00599040 /* happy gilmore.gif */; };
 		376DD4C31E0EA02D00423F13 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
 		4882659882B0F437D07AA490 /* Pods_emojigame_Emojisodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AEFF2C71701604D7281E83 /* Pods_emojigame_Emojisodes.framework */; };
 		660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */; };
@@ -142,6 +152,16 @@
 		3702CF731E115A8400599040 /* ace ventura pet detective.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ace ventura pet detective.gif"; sourceTree = "<group>"; };
 		3702CF741E115A8400599040 /* face off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "face off.gif"; sourceTree = "<group>"; };
 		3702CF751E115A8400599040 /* big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big.gif; sourceTree = "<group>"; };
+		3702CF7C1E116F7500599040 /* father of the bride.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "father of the bride.gif"; sourceTree = "<group>"; };
+		3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "my big fat greek wedding.gif"; sourceTree = "<group>"; };
+		3702CF7E1E116F7500599040 /* the dark knight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the dark knight.gif"; sourceTree = "<group>"; };
+		3702CF7F1E116F7500599040 /* national treasure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "national treasure.gif"; sourceTree = "<group>"; };
+		3702CF801E116F7500599040 /* sherlock holmes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sherlock holmes.jpg"; sourceTree = "<group>"; };
+		3702CF811E116F7500599040 /* dirty dancing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dirty dancing.gif"; sourceTree = "<group>"; };
+		3702CF821E116F7500599040 /* ghostbusters.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ghostbusters.gif; sourceTree = "<group>"; };
+		3702CF831E116F7500599040 /* the usual suspects.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the usual suspects.gif"; sourceTree = "<group>"; };
+		3702CF841E116F7500599040 /* the matrix.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the matrix.gif"; sourceTree = "<group>"; };
+		3702CF8E1E12AFCC00599040 /* happy gilmore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "happy gilmore.gif"; sourceTree = "<group>"; };
 		3E9FBCD6FEC0F72F303693A4 /* Pods-emojigame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame/Pods-emojigame.release.xcconfig"; sourceTree = "<group>"; };
 		411F2A33DF9891106E504F6C /* Pods-emojigame-Emojisodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame-Emojisodes.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame-Emojisodes/Pods-emojigame-Emojisodes.release.xcconfig"; sourceTree = "<group>"; };
 		54C9664DB8511DD741043108 /* Pods_emojigame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,6 +376,16 @@
 		66D06FC11E094DF0008ACB40 /* StickerGIFs */ = {
 			isa = PBXGroup;
 			children = (
+				3702CF8E1E12AFCC00599040 /* happy gilmore.gif */,
+				3702CF7C1E116F7500599040 /* father of the bride.gif */,
+				3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */,
+				3702CF7E1E116F7500599040 /* the dark knight.gif */,
+				3702CF7F1E116F7500599040 /* national treasure.gif */,
+				3702CF801E116F7500599040 /* sherlock holmes.jpg */,
+				3702CF811E116F7500599040 /* dirty dancing.gif */,
+				3702CF821E116F7500599040 /* ghostbusters.gif */,
+				3702CF831E116F7500599040 /* the usual suspects.gif */,
+				3702CF841E116F7500599040 /* the matrix.gif */,
 				3702CF701E115A8400599040 /* pulp fiction.gif */,
 				3702CF711E115A8400599040 /* the wizard of oz.gif */,
 				3702CF721E115A8400599040 /* kindergarten cop.gif */,
@@ -629,12 +659,19 @@
 				66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */,
 				3702CF6F1E11565D00599040 /* the shawshank redemption.gif in Resources */,
 				3702CF661E11565D00599040 /* inception.gif in Resources */,
+				3702CF861E116F7500599040 /* my big fat greek wedding.gif in Resources */,
 				3702CF6B1E11565D00599040 /* wall-e.gif in Resources */,
+				3702CF881E116F7500599040 /* national treasure.gif in Resources */,
 				3702CF6D1E11565D00599040 /* back to the future.gif in Resources */,
+				3702CF8D1E116F7500599040 /* the matrix.gif in Resources */,
 				3702CF5B1E1151CC00599040 /* you've got mail.gif in Resources */,
+				3702CF891E116F7500599040 /* sherlock holmes.jpg in Resources */,
+				3702CF8C1E116F7500599040 /* the usual suspects.gif in Resources */,
 				3702CF771E115A8400599040 /* the wizard of oz.gif in Resources */,
 				3702CF6C1E11565D00599040 /* the three amigos.gif in Resources */,
 				3702CF791E115A8400599040 /* ace ventura pet detective.gif in Resources */,
+				3702CF8B1E116F7500599040 /* ghostbusters.gif in Resources */,
+				3702CF8A1E116F7500599040 /* dirty dancing.gif in Resources */,
 				3702CF681E11565D00599040 /* forrest gump.gif in Resources */,
 				66D06FC51E094DF0008ACB40 /* the net.gif in Resources */,
 				3702CF6E1E11565D00599040 /* ferris bueller's day off.gif in Resources */,
@@ -642,12 +679,15 @@
 				3702CF761E115A8400599040 /* pulp fiction.gif in Resources */,
 				3702CF591E11518F00599040 /* poltergeist.gif in Resources */,
 				3702CF6A1E11565D00599040 /* se7en.gif in Resources */,
+				3702CF8F1E12AFCC00599040 /* happy gilmore.gif in Resources */,
+				3702CF851E116F7500599040 /* father of the bride.gif in Resources */,
 				66D06F771E08C8BA008ACB40 /* MainInterface.storyboard in Resources */,
 				3702CF7A1E115A8400599040 /* face off.gif in Resources */,
 				3702CF671E11565D00599040 /* thor.gif in Resources */,
 				3702CF691E11565D00599040 /* spider-man.gif in Resources */,
 				66D06FC41E094DF0008ACB40 /* demolition man.gif in Resources */,
 				3702CF7B1E115A8400599040 /* big.gif in Resources */,
+				3702CF871E116F7500599040 /* the dark knight.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

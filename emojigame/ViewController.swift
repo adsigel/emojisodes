@@ -172,6 +172,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 // adds new child to /exclude with movie key
                 userRef.child(uzer).child("exclude").child(movieToGuess).setValue("correct")
                 print("adding \(movieToGuess) to user's exclude list")
+                ProfileController().buildMovieList()
             }
             let ShareAction = UIAlertAction(title: "Share", style: .Default) { (action) in
                 let composer = TWTRComposer()

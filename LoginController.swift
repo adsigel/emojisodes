@@ -66,6 +66,7 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
             userDict = ["name": alias, "email": "", "score": 0, "correct": 0, "addedDate": dateString, "exclude": ["key": true], "new_in_town": "true"]
             print("userDict is \(userDict)")
             newUserRef.setValue(userDict)
+            analytics.enqueue(TrackMessageBuilder(event: "New User").userId(uzer))
             self.performSegueWithIdentifier("firstTime", sender: sender)
             analytics.flush()
         }
