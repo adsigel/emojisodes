@@ -25,6 +25,9 @@ var newUser = String()
 var gcAuth : Bool = false
 var alias = ""
 var defaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")
+let storage = FIRStorage.storage()
+let storageRef = storage.referenceForURL("gs://emojisodes.appspot.com")
+let gifRef = storageRef.child("gif")
 
 class LoginController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     
@@ -56,9 +59,6 @@ class LoginController: UIViewController, UITextFieldDelegate, UINavigationContro
             })
             lastLogin()
             delay(1.0) {
-//                var defaults = NSUserDefaults(suiteName: "group.com.emojisodes")
-//                defaults?.setObject(userDict, forKey: "userDict")
-//                defaults?.synchronize()
                 self.performSegueWithIdentifier("logIn", sender: sender)
                 self.analytics.flush()
             }

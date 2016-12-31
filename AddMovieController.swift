@@ -38,6 +38,7 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         apiController.delegate = self
+        analytics.enqueue(TrackMessageBuilder(event: "Viewed Add Movie Screen").properties(["title": userSubmitTitle.text!, "plot": userSubmitPlot.text!]).userId(uzer))
         userSubmitTitle.addTarget(self, action: "textFieldDidEndEditing:", forControlEvents: UIControlEvents.EditingDidEnd)
     }
     
@@ -88,6 +89,7 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
                 userDict["score"] = newScore
                 userRef.child(uzer).child("score").setValue(newScore)
                 print("The new movie has been added with an id of: \(movieId)")
+                // TODO: Prompt to share the newly added movie, and track this.
                 let submitOkay = UIAlertController(title: "Success", message: "Your movie has been added to Emojisodes!", preferredStyle: UIAlertControllerStyle.Alert)
                 let nextRound = UIAlertAction(title: "Next Round", style: .Default) { (action) in
                     self.dismissViewControllerAnimated(true, completion: nil)
@@ -120,7 +122,8 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
 
         }
         helpAlert.addAction(good)
-        helpAlert.addAction(help)        
+        helpAlert.addAction(help)
+        analytics.enqueue(TrackMessageBuilder(event: "Add Movie Help").userId(uzer))
         self.presentViewController(helpAlert, animated: true, completion: nil)
     }
     
@@ -150,7 +153,7 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
             activityVC.completionWithItemsHandler = {(activityType, completed:Bool, returnedItems:[AnyObject]?, error: NSError?) in
                 //technically only checks if user presses Cancel at share sheet level, not tweet level
                 print("Shared video activity: \(activityType)")
-                self.analytics.enqueue(TrackMessageBuilder(event: "Shared Submission").userId(uzer))
+                self.analytics.enqueue(TrackMessageBuilder(event: "Shared Submission").properties(["title": self.userSubmitTitle.text!, "plot": self.userSubmitPlot.text!]).userId(uzer))
             }
         }
         analytics.flush()

@@ -9,19 +9,41 @@
 import UIKit
 import Messages
 import AnalyticsSwift
+import Firebase
 
 var extMovies : Array = [String]()
 var extUzer : String = ""
+let storage = FIRStorage.storage()
+let storageRef = storage.referenceForURL("gs://emojisodes.appspot.com")
+let gifRef = storageRef.child("gif")
 
 class MessagesViewController: MSMessagesAppViewController {
     
     var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     var stickerBrowser: MSStickerBrowserView?
+    let stickerProvider = EmojisodesStickersViewController()
     var defaults: NSUserDefaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if(FIRApp.defaultApp() == nil){
+//            FIRApp.configure()
+//        }
+//        print("gifRef is \(gifRef) as \(gifRef.dynamicType)")
+//        let bigRef = gifRef.child("big.gif")
+//        print("bigRef is \(bigRef)")
+//        bigRef.dataWithMaxSize(1 * 1024 * 1024) { (data, error) in
+//            if let error = error {
+//                // uh-oh
+//                print("Firebase: error is \(error)")
+//            } else {
+//                // data returned
+//                let image = UIImage(data: data!)
+//                print("image is \(image)")
+//            }
+//        }
         syncDefaults()
+//        setupStickerBrowser()
         // Do any additional setup after loading the view.
     }
     
@@ -32,18 +54,11 @@ class MessagesViewController: MSMessagesAppViewController {
     
     // MARK: - Conversation Handling
     
-    private func setupStickerBrowser(){
-
-        if stickerBrowser == nil {
-            //1. Sticker Browser Initialization
-            stickerBrowser = MSStickerBrowserView()
-            view.addSubview(stickerBrowser!)
-        }
-    }
-    
     func syncDefaults() {
         if let extUzer = defaults.stringForKey("extensionUzer") {
             print("extUzer is \(extUzer)")
+            analytics.enqueue(TrackMessageBuilder(event: "Opened Message Extension").userId(extUzer))
+            analytics.flush()
         } else {
             print("no extUzer to be found here")
         }
@@ -62,8 +77,7 @@ class MessagesViewController: MSMessagesAppViewController {
         
         // Use this method to configure the extension and restore previously stored state.
         setupStickerBrowser()
-        analytics.enqueue(TrackMessageBuilder(event: "Opened Message Extension").userId(extUzer))
-        analytics.flush()
+        print("calling willBecomeActive")
     }
     
     func didResignActive(with conversation: MSConversation) {
@@ -74,7 +88,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to release shared resources, save user data, invalidate timers,
         // and store enough state information to restore your extension to its current state
         // in case it is terminated later.
-        analytics.flush()
+        print("calling didResignActive")
     }
    
     func didReceive(_ message: MSMessage, conversation: MSConversation) {
@@ -82,30 +96,56 @@ class MessagesViewController: MSMessagesAppViewController {
         // extension on a remote device.
         
         // Use this method to trigger UI updates in response to the message.
+        print("calling didReceive")
     }
     
     func didStartSending(_ message: MSMessage, conversation: MSConversation) {
         // Called when the user taps the send button.
         analytics.enqueue(TrackMessageBuilder(event: "Sent Message").userId(extUzer))
+        analytics.enqueue(TrackMessageBuilder(event: "Sent Message").anonymousId("random"))
         analytics.flush()
+        print("calling didStartSending \(message)")
     }
     
     func didCancelSending(_ message: MSMessage, conversation: MSConversation) {
         // Called when the user deletes the message without sending it.
     
         // Use this to clean up state related to the deleted message.
+        print("calling didCancelSending")
     }
     
     func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called before the extension transitions to a new presentation style.
     
         // Use this method to prepare for the change in presentation style.
+        print("calling willTransition")
     }
     
     func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
+        print("calling didTransition")
     }
+    
+    func setupStickerBrowser(){
+        print("running setupStickerBrowser")
+        if stickerBrowser == nil{
+            //1. Sticker Browser Initialization
+            stickerBrowser = MSStickerBrowserView()
+            view.addSubview(stickerBrowser!)
+            
+            //2. Setting up Constraints
+            stickerBrowser!.translatesAutoresizingMaskIntoConstraints = false
+            stickerBrowser!.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor)
+            stickerBrowser!.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor)
+            NSLayoutConstraint(item: stickerBrowser!, attribute: .Top, relatedBy: .Equal, toItem: topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0)
+            NSLayoutConstraint(item: stickerBrowser!, attribute: .Bottom, relatedBy: .Equal, toItem: bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0)
+            print("finished setting up stickerBrowser")
+        }
+        
+        stickerBrowser!.dataSource = stickerProvider
+    }
+
 
 }

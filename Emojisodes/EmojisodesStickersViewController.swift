@@ -9,6 +9,7 @@
 import Foundation
 import Messages
 import AnalyticsSwift
+import Firebase
 
 class EmojisodesStickersViewController : MSStickerBrowserViewController {
     
@@ -19,11 +20,15 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
     var allMovies : [String] = []
     var stickerNames : Array = [String]()
     var userMovies = [String]()
-    var newArray : Array = [String]()
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        if(FIRApp.defaultApp() == nil){
+            FIRApp.configure()
+        }
+        print("gifRef is \(gifRef) as \(gifRef.dynamicType)")
         buildAllMovies()
+        grabGifs()
         determineStickers()
         self.stickers = [MSSticker]()
         self.stickers = loadStickers()
@@ -44,9 +49,9 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
             for item in allMovies {
                 if extMovies.contains(item.capitalizedString) {
                     stickerNames.append(item)
-                    print("appending \(item) to \(stickerNames)")
+//                    print("appending \(item) to \(stickerNames)")
                 } else {
-                    print("no extMovies to be found here")
+//                    print("no extMovies to be found here")
                 }
             }
             
@@ -54,19 +59,38 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
         
     }
     
+    
+    func grabGifs() {
+        // successfully returning the URL of a specific file in Firebase storage
+        // TODO:
+        // 1. Loop through the /gif child and get a URL for every file
+        // 2. Compare the filenames of the gifs to the titles in extMovies
+        // 3. Present the matches to the user (download all matches first?)
+        let bigRef = gifRef.child("big.gif")
+        bigRef.downloadURLWithCompletion { (url, error) in
+            if let error = error {
+                // handle the errors
+                print("error getting download url: \(error)")
+            } else {
+                // get the download url
+                print("download url is \(url!)")
+            }
+        }
+    }
+    
+
+    
     func buildAllMovies() -> [String] {
         let docsPath = NSBundle.mainBundle().resourcePath!
-        print("docsPath is: \(docsPath)")
         let fileManager = NSFileManager.defaultManager()
-        print("fileManager is: \(fileManager)")
         
         do {
             let docsArray = try fileManager.contentsOfDirectoryAtPath(docsPath)
-            print("docsArray is: \(docsArray)")
+//            print("docsArray is: \(docsArray)")
             for item in docsArray {
                 if item.hasSuffix(".gif") {
                     gifArray.append(item.stringByReplacingOccurrencesOfString(".gif", withString: ""))
-                    print("gifArray is: \(gifArray)")
+//                    print("gifArray is: \(gifArray)")
                 }
             }
         } catch {

@@ -430,8 +430,10 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                     movieTitles.append(movieItem.title.capitalizedString)
                     moviePlots.append(movieItem.plot)
                     defaults?.setObject(movieTitles as [String], forKey: "extensionMovies")
+                    defaults?.setObject(gifRef as AnyObject, forKey: "firebaseRef")
                     defaults?.synchronize()
                     print("synchronizing extMovies as \(movieTitles)")
+                    print("synchronizing firebaseRef as \(gifRef) as \(gifRef.dynamicType)")
                 }
             }
             

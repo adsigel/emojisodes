@@ -8,6 +8,7 @@ target 'emojigame' do
   # Pods for emojigame
   pod 'Firebase/Core', '~> 3.7.0'
   pod 'Firebase/Database', '~> 3.7.0'
+  pod 'Firebase/Storage', '~> 3.7.0'
   pod 'Firebase/Auth', '~> 3.7.0'
   pod 'AnalyticsSwift', '~> 0.2.0'
   # pod 'Segment-Amplitude'
@@ -27,10 +28,12 @@ target 'emojigame' do
 
   target 'Emojisodes' do
 
-    pod 'Firebase/Core', '~> 3.7.0'
-    pod 'Firebase/Database', '~> 3.7.0'
+    use_frameworks!
+
     pod 'AnalyticsSwift', '~> 0.2.0'
     pod 'StringScore_Swift'
+    pod 'Firebase/Storage', '~> 3.7.0'
+    # pod 'GiphySwift'
 
   end
 

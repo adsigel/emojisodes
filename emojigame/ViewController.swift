@@ -131,7 +131,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var guess = userGuess.text?.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         guessCount = guessCount + 1
         print("User has guessed " + guess!)
-        movieRef.child(movieToGuess).child("guesses").child(uzer).setValue(guess)
         var title = movieDict["title"] as! String
         if title.hasPrefix("the ") {
             title = title.stringByReplacingOccurrencesOfString("the ", withString: "")
@@ -141,7 +140,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         if title.score(guess!, fuzziness: 0.9) > 0.8 {
             print("userGuess is correct")
-            analytics.enqueue(TrackMessageBuilder(event: "Guessed Movie").properties(["guess": guess!, "outcome": "correct"]).userId(uzer))
+            analytics.enqueue(TrackMessageBuilder(event: "Guessed Movie").properties(["movie": title, "guess": guess!, "outcome": "correct"]).userId(uzer))
 
             // reset skip count
             skip = 0
@@ -195,12 +194,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }
 
-            guessRightAlert.addAction(OKAction)
             guessRightAlert.addAction(ShareAction)
+            guessRightAlert.addAction(OKAction)
             self.presentViewController(guessRightAlert, animated: true, completion: nil)
         } else {
             print("userGuess is incorrect")
-            analytics.enqueue(TrackMessageBuilder(event: "Guessed Movie").properties(["guess": guess!, "outcome": "incorrect"]).userId(uzer))
+            analytics.enqueue(TrackMessageBuilder(event: "Guessed Movie").properties(["movie": title, "guess": guess!, "outcome": "incorrect"]).userId(uzer))
             let anim = CAKeyframeAnimation( keyPath:"transform" )
             anim.values = [
                 NSValue( CATransform3D:CATransform3DMakeTranslation(-10, 0, 0 ) ),
@@ -269,7 +268,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-        analytics.enqueue(TrackMessageBuilder(event: "Hint Requested").properties(["category": hintCategory]).userId(uzer))
+        analytics.enqueue(TrackMessageBuilder(event: "Hint Requested").properties(["category": hintCategory, "movie":movieDict["title"]!]).userId(uzer))
     }
     
     @IBAction func skipMovie(sender: AnyObject) {

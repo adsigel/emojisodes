@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>164285679324-ddrv73oae73kt7v8nd72caesp3gcsofu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.164285679324-ddrv73oae73kt7v8nd72caesp3gcsofu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAdMGcevR4StIGRb6O--wPrCezwODBSbsU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>164285679324</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adamdsigel.emojisodes1.Emojisodes</string>
+	<key>PROJECT_ID</key>
+	<string>emojisodes</string>
+	<key>STORAGE_BUCKET</key>
+	<string>emojisodes.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:164285679324:ios:3420b9fb4b2ec854</string>
+	<key>DATABASE_URL</key>
+	<string>https://emojisodes.firebaseio.com</string>
+</dict>
+</plist>

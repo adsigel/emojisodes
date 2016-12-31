@@ -21,8 +21,7 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableItems = movieTitles
-//        print("tableItems is \(tableItems)")
+        analytics.enqueue(TrackMessageBuilder(event: "Viewed Completed Movie List").userId(uzer))
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -96,5 +95,6 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
     
     func finishUpButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+        analytics.flush()
     }
 }
