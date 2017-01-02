@@ -10,33 +10,20 @@
 		1F962A2AC477CB7C72768F96 /* Pods_emojigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585542A64B59979D93B4C209 /* Pods_emojigameTests.framework */; };
 		344B2A1DEFE9EC1D7B78AE85 /* Pods_emojigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E599ED5A78AE76F78C8E5 /* Pods_emojigameUITests.framework */; };
 		3702CF571E11506800599040 /* psycho.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF561E11506800599040 /* psycho.gif */; };
-		3702CF591E11518F00599040 /* poltergeist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF581E11518F00599040 /* poltergeist.gif */; };
 		3702CF5B1E1151CC00599040 /* you've got mail.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5A1E1151CC00599040 /* you've got mail.gif */; };
 		3702CF661E11565D00599040 /* inception.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5C1E11565D00599040 /* inception.gif */; };
-		3702CF671E11565D00599040 /* thor.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5D1E11565D00599040 /* thor.gif */; };
 		3702CF681E11565D00599040 /* forrest gump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5E1E11565D00599040 /* forrest gump.gif */; };
-		3702CF691E11565D00599040 /* spider-man.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5F1E11565D00599040 /* spider-man.gif */; };
 		3702CF6A1E11565D00599040 /* se7en.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF601E11565D00599040 /* se7en.gif */; };
-		3702CF6B1E11565D00599040 /* wall-e.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF611E11565D00599040 /* wall-e.gif */; };
-		3702CF6C1E11565D00599040 /* the three amigos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF621E11565D00599040 /* the three amigos.gif */; };
 		3702CF6D1E11565D00599040 /* back to the future.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF631E11565D00599040 /* back to the future.gif */; };
 		3702CF6E1E11565D00599040 /* ferris bueller's day off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF641E11565D00599040 /* ferris bueller's day off.gif */; };
-		3702CF6F1E11565D00599040 /* the shawshank redemption.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF651E11565D00599040 /* the shawshank redemption.gif */; };
-		3702CF761E115A8400599040 /* pulp fiction.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF701E115A8400599040 /* pulp fiction.gif */; };
-		3702CF771E115A8400599040 /* the wizard of oz.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF711E115A8400599040 /* the wizard of oz.gif */; };
 		3702CF781E115A8400599040 /* kindergarten cop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF721E115A8400599040 /* kindergarten cop.gif */; };
 		3702CF791E115A8400599040 /* ace ventura pet detective.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF731E115A8400599040 /* ace ventura pet detective.gif */; };
 		3702CF7A1E115A8400599040 /* face off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF741E115A8400599040 /* face off.gif */; };
 		3702CF7B1E115A8400599040 /* big.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF751E115A8400599040 /* big.gif */; };
 		3702CF851E116F7500599040 /* father of the bride.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7C1E116F7500599040 /* father of the bride.gif */; };
 		3702CF861E116F7500599040 /* my big fat greek wedding.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */; };
-		3702CF871E116F7500599040 /* the dark knight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7E1E116F7500599040 /* the dark knight.gif */; };
-		3702CF881E116F7500599040 /* national treasure.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF7F1E116F7500599040 /* national treasure.gif */; };
-		3702CF891E116F7500599040 /* sherlock holmes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF801E116F7500599040 /* sherlock holmes.jpg */; };
 		3702CF8A1E116F7500599040 /* dirty dancing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF811E116F7500599040 /* dirty dancing.gif */; };
 		3702CF8B1E116F7500599040 /* ghostbusters.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF821E116F7500599040 /* ghostbusters.gif */; };
-		3702CF8C1E116F7500599040 /* the usual suspects.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF831E116F7500599040 /* the usual suspects.gif */; };
-		3702CF8D1E116F7500599040 /* the matrix.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF841E116F7500599040 /* the matrix.gif */; };
 		3702CF8F1E12AFCC00599040 /* happy gilmore.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF8E1E12AFCC00599040 /* happy gilmore.gif */; };
 		3719A66B1E14859700644F09 /* Pods_emojigame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719A66A1E14859700644F09 /* Pods_emojigame.framework */; };
 		3732394E1E14405A00F03599 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3732394D1E14405A00F03599 /* AnalyticsSwift.framework */; };
@@ -45,7 +32,6 @@
 		373D6D0D1E16F53300E18D51 /* home alone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 373D6D0C1E16F53300E18D51 /* home alone.gif */; };
 		373D6D0E1E16F53300E18D51 /* home alone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 373D6D0C1E16F53300E18D51 /* home alone.gif */; };
 		376DD4C31E0EA02D00423F13 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D06F731E08C8BA008ACB40 /* MessagesViewController.swift */; };
-		37CE53E01E13FB4D00DD5028 /* the lion king.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53B71E13FB4D00DD5028 /* the lion king.gif */; };
 		37CE53E11E13FB4D00DD5028 /* clueless.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53B81E13FB4D00DD5028 /* clueless.gif */; };
 		37CE53E21E13FB4D00DD5028 /* all the president's men.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53B91E13FB4D00DD5028 /* all the president's men.gif */; };
 		37CE53E31E13FB4D00DD5028 /* caddyshack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53BA1E13FB4D00DD5028 /* caddyshack.gif */; };
@@ -53,14 +39,9 @@
 		37CE53E51E13FB4E00DD5028 /* captain america civil war.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53BC1E13FB4D00DD5028 /* captain america civil war.gif */; };
 		37CE53E61E13FB4E00DD5028 /* the day after tomorrow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53BD1E13FB4D00DD5028 /* the day after tomorrow.gif */; };
 		37CE53E71E13FB4E00DD5028 /* grand budapest hotel.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53BE1E13FB4D00DD5028 /* grand budapest hotel.gif */; };
-		37CE53E81E13FB4E00DD5028 /* noah.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53BF1E13FB4D00DD5028 /* noah.gif */; };
 		37CE53E91E13FB4E00DD5028 /* legally blonde.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C01E13FB4D00DD5028 /* legally blonde.gif */; };
-		37CE53EA1E13FB4E00DD5028 /* joy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C11E13FB4D00DD5028 /* joy.gif */; };
 		37CE53EB1E13FB4E00DD5028 /* little miss sunshine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C21E13FB4D00DD5028 /* little miss sunshine.gif */; };
 		37CE53EC1E13FB4E00DD5028 /* pretty woman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C31E13FB4D00DD5028 /* pretty woman.gif */; };
-		37CE53ED1E13FB4E00DD5028 /* rudy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C41E13FB4D00DD5028 /* rudy.gif */; };
-		37CE53EE1E13FB4E00DD5028 /* what about bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C51E13FB4D00DD5028 /* what about bob.gif */; };
-		37CE53EF1E13FB4E00DD5028 /* risky business.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C61E13FB4D00DD5028 /* risky business.gif */; };
 		37CE53F01E13FB4E00DD5028 /* groundhog day.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C71E13FB4D00DD5028 /* groundhog day.gif */; };
 		37CE53F11E13FB4E00DD5028 /* armageddon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C81E13FB4D00DD5028 /* armageddon.gif */; };
 		37CE53F21E13FB4E00DD5028 /* gladiator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53C91E13FB4D00DD5028 /* gladiator.gif */; };
@@ -70,20 +51,16 @@
 		37CE53F61E13FB4E00DD5028 /* ghost.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53CD1E13FB4D00DD5028 /* ghost.gif */; };
 		37CE53F71E13FB4E00DD5028 /* con air.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53CE1E13FB4D00DD5028 /* con air.gif */; };
 		37CE53F81E13FB4E00DD5028 /* coyote ugly.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53CF1E13FB4D00DD5028 /* coyote ugly.gif */; };
-		37CE53FA1E13FB4E00DD5028 /* white men can't jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D11E13FB4D00DD5028 /* white men can't jump.gif */; };
 		37CE53FB1E13FB4E00DD5028 /* beverly hills cop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D21E13FB4D00DD5028 /* beverly hills cop.gif */; };
 		37CE53FC1E13FB4E00DD5028 /* die hard.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D31E13FB4D00DD5028 /* die hard.gif */; };
 		37CE53FD1E13FB4E00DD5028 /* the money pit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D41E13FB4D00DD5028 /* the money pit.gif */; };
-		37CE53FE1E13FB4E00DD5028 /* point break.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D51E13FB4D00DD5028 /* point break.gif */; };
 		37CE53FF1E13FB4E00DD5028 /* blazing saddles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D61E13FB4D00DD5028 /* blazing saddles.gif */; };
 		37CE54001E13FB4E00DD5028 /* goonies.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D71E13FB4D00DD5028 /* goonies.gif */; };
 		37CE54011E13FB4E00DD5028 /* apollo 13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D81E13FB4D00DD5028 /* apollo 13.gif */; };
 		37CE54021E13FB4E00DD5028 /* the karate kid.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53D91E13FB4D00DD5028 /* the karate kid.gif */; };
 		37CE54041E13FB4E00DD5028 /* footloose.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DB1E13FB4D00DD5028 /* footloose.gif */; };
-		37CE54051E13FB4E00DD5028 /* sherlock holmes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DC1E13FB4D00DD5028 /* sherlock holmes.gif */; };
 		37CE54061E13FB4E00DD5028 /* days of thunder.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DD1E13FB4D00DD5028 /* days of thunder.gif */; };
 		37CE54071E13FB4E00DD5028 /* hot fuzz.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DE1E13FB4D00DD5028 /* hot fuzz.gif */; };
-		37CE54081E13FB4E00DD5028 /* shaun of the dead.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DF1E13FB4D00DD5028 /* shaun of the dead.gif */; };
 		37D2D4981E153B8800D5A9A8 /* contact.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37D2D4971E153B8800D5A9A8 /* contact.gif */; };
 		4818E6306E4CFFF7240DA659 /* Pods_emojigame_Emojisodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E484E61D0C3480FB41255C /* Pods_emojigame_Emojisodes.framework */; };
 		660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */; };
@@ -182,40 +159,26 @@
 		2A73B11DAB20B9FCFBBDDA8B /* Pods-emojigame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame/Pods-emojigame.debug.xcconfig"; sourceTree = "<group>"; };
 		2B84D334BF9C1FFD10019471 /* Pods-emojigame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame/Pods-emojigame.release.xcconfig"; sourceTree = "<group>"; };
 		3702CF561E11506800599040 /* psycho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = psycho.gif; sourceTree = "<group>"; };
-		3702CF581E11518F00599040 /* poltergeist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = poltergeist.gif; sourceTree = "<group>"; };
 		3702CF5A1E1151CC00599040 /* you've got mail.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "you've got mail.gif"; sourceTree = "<group>"; };
 		3702CF5C1E11565D00599040 /* inception.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inception.gif; sourceTree = "<group>"; };
-		3702CF5D1E11565D00599040 /* thor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thor.gif; sourceTree = "<group>"; };
 		3702CF5E1E11565D00599040 /* forrest gump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "forrest gump.gif"; sourceTree = "<group>"; };
-		3702CF5F1E11565D00599040 /* spider-man.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "spider-man.gif"; sourceTree = "<group>"; };
 		3702CF601E11565D00599040 /* se7en.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = se7en.gif; sourceTree = "<group>"; };
-		3702CF611E11565D00599040 /* wall-e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "wall-e.gif"; sourceTree = "<group>"; };
-		3702CF621E11565D00599040 /* the three amigos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the three amigos.gif"; sourceTree = "<group>"; };
 		3702CF631E11565D00599040 /* back to the future.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "back to the future.gif"; sourceTree = "<group>"; };
 		3702CF641E11565D00599040 /* ferris bueller's day off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ferris bueller's day off.gif"; sourceTree = "<group>"; };
-		3702CF651E11565D00599040 /* the shawshank redemption.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the shawshank redemption.gif"; sourceTree = "<group>"; };
-		3702CF701E115A8400599040 /* pulp fiction.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pulp fiction.gif"; sourceTree = "<group>"; };
-		3702CF711E115A8400599040 /* the wizard of oz.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the wizard of oz.gif"; sourceTree = "<group>"; };
 		3702CF721E115A8400599040 /* kindergarten cop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "kindergarten cop.gif"; sourceTree = "<group>"; };
 		3702CF731E115A8400599040 /* ace ventura pet detective.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ace ventura pet detective.gif"; sourceTree = "<group>"; };
 		3702CF741E115A8400599040 /* face off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "face off.gif"; sourceTree = "<group>"; };
 		3702CF751E115A8400599040 /* big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big.gif; sourceTree = "<group>"; };
 		3702CF7C1E116F7500599040 /* father of the bride.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "father of the bride.gif"; sourceTree = "<group>"; };
 		3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "my big fat greek wedding.gif"; sourceTree = "<group>"; };
-		3702CF7E1E116F7500599040 /* the dark knight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the dark knight.gif"; sourceTree = "<group>"; };
-		3702CF7F1E116F7500599040 /* national treasure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "national treasure.gif"; sourceTree = "<group>"; };
-		3702CF801E116F7500599040 /* sherlock holmes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sherlock holmes.jpg"; sourceTree = "<group>"; };
 		3702CF811E116F7500599040 /* dirty dancing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dirty dancing.gif"; sourceTree = "<group>"; };
 		3702CF821E116F7500599040 /* ghostbusters.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ghostbusters.gif; sourceTree = "<group>"; };
-		3702CF831E116F7500599040 /* the usual suspects.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the usual suspects.gif"; sourceTree = "<group>"; };
-		3702CF841E116F7500599040 /* the matrix.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the matrix.gif"; sourceTree = "<group>"; };
 		3702CF8E1E12AFCC00599040 /* happy gilmore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "happy gilmore.gif"; sourceTree = "<group>"; };
 		3719A66A1E14859700644F09 /* Pods_emojigame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_emojigame.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-hlajniaroansvldolegsphuktpbt/Build/Products/Debug-iphonesimulator/Pods_emojigame.framework"; sourceTree = "<group>"; };
 		3732394D1E14405A00F03599 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "Pods/../build/Debug-iphoneos/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		3732394F1E14408000F03599 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "Pods/../build/Debug-iphoneos/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		373D6D091E16966A00E18D51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		373D6D0C1E16F53300E18D51 /* home alone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "home alone.gif"; sourceTree = "<group>"; };
-		37CE53B71E13FB4D00DD5028 /* the lion king.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the lion king.gif"; sourceTree = "<group>"; };
 		37CE53B81E13FB4D00DD5028 /* clueless.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = clueless.gif; sourceTree = "<group>"; };
 		37CE53B91E13FB4D00DD5028 /* all the president's men.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "all the president's men.gif"; sourceTree = "<group>"; };
 		37CE53BA1E13FB4D00DD5028 /* caddyshack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = caddyshack.gif; sourceTree = "<group>"; };
@@ -223,14 +186,9 @@
 		37CE53BC1E13FB4D00DD5028 /* captain america civil war.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "captain america civil war.gif"; sourceTree = "<group>"; };
 		37CE53BD1E13FB4D00DD5028 /* the day after tomorrow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the day after tomorrow.gif"; sourceTree = "<group>"; };
 		37CE53BE1E13FB4D00DD5028 /* grand budapest hotel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "grand budapest hotel.gif"; sourceTree = "<group>"; };
-		37CE53BF1E13FB4D00DD5028 /* noah.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = noah.gif; sourceTree = "<group>"; };
 		37CE53C01E13FB4D00DD5028 /* legally blonde.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "legally blonde.gif"; sourceTree = "<group>"; };
-		37CE53C11E13FB4D00DD5028 /* joy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joy.gif; sourceTree = "<group>"; };
 		37CE53C21E13FB4D00DD5028 /* little miss sunshine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "little miss sunshine.gif"; sourceTree = "<group>"; };
 		37CE53C31E13FB4D00DD5028 /* pretty woman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "pretty woman.gif"; sourceTree = "<group>"; };
-		37CE53C41E13FB4D00DD5028 /* rudy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rudy.gif; sourceTree = "<group>"; };
-		37CE53C51E13FB4D00DD5028 /* what about bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "what about bob.gif"; sourceTree = "<group>"; };
-		37CE53C61E13FB4D00DD5028 /* risky business.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "risky business.gif"; sourceTree = "<group>"; };
 		37CE53C71E13FB4D00DD5028 /* groundhog day.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "groundhog day.gif"; sourceTree = "<group>"; };
 		37CE53C81E13FB4D00DD5028 /* armageddon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = armageddon.gif; sourceTree = "<group>"; };
 		37CE53C91E13FB4D00DD5028 /* gladiator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gladiator.gif; sourceTree = "<group>"; };
@@ -240,20 +198,16 @@
 		37CE53CD1E13FB4D00DD5028 /* ghost.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ghost.gif; sourceTree = "<group>"; };
 		37CE53CE1E13FB4D00DD5028 /* con air.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "con air.gif"; sourceTree = "<group>"; };
 		37CE53CF1E13FB4D00DD5028 /* coyote ugly.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "coyote ugly.gif"; sourceTree = "<group>"; };
-		37CE53D11E13FB4D00DD5028 /* white men can't jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "white men can't jump.gif"; sourceTree = "<group>"; };
 		37CE53D21E13FB4D00DD5028 /* beverly hills cop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "beverly hills cop.gif"; sourceTree = "<group>"; };
 		37CE53D31E13FB4D00DD5028 /* die hard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "die hard.gif"; sourceTree = "<group>"; };
 		37CE53D41E13FB4D00DD5028 /* the money pit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the money pit.gif"; sourceTree = "<group>"; };
-		37CE53D51E13FB4D00DD5028 /* point break.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "point break.gif"; sourceTree = "<group>"; };
 		37CE53D61E13FB4D00DD5028 /* blazing saddles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "blazing saddles.gif"; sourceTree = "<group>"; };
 		37CE53D71E13FB4D00DD5028 /* goonies.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goonies.gif; sourceTree = "<group>"; };
 		37CE53D81E13FB4D00DD5028 /* apollo 13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "apollo 13.gif"; sourceTree = "<group>"; };
 		37CE53D91E13FB4D00DD5028 /* the karate kid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the karate kid.gif"; sourceTree = "<group>"; };
 		37CE53DB1E13FB4D00DD5028 /* footloose.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = footloose.gif; sourceTree = "<group>"; };
-		37CE53DC1E13FB4D00DD5028 /* sherlock holmes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sherlock holmes.gif"; sourceTree = "<group>"; };
 		37CE53DD1E13FB4D00DD5028 /* days of thunder.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "days of thunder.gif"; sourceTree = "<group>"; };
 		37CE53DE1E13FB4D00DD5028 /* hot fuzz.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "hot fuzz.gif"; sourceTree = "<group>"; };
-		37CE53DF1E13FB4D00DD5028 /* shaun of the dead.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "shaun of the dead.gif"; sourceTree = "<group>"; };
 		37D2D4971E153B8800D5A9A8 /* contact.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = contact.gif; sourceTree = "<group>"; };
 		396BFF86A83756C07C883845 /* Pods-emojigameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		585542A64B59979D93B4C209 /* Pods_emojigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +315,8 @@
 		660A6F151E0AF1A4005A14BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6695A05A1D71A47400DE855F /* StringScore.swift */,
+				6697E20A1DF838FF00542F8C /* OMDBAPIController.swift */,
 				660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */,
 				660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */,
 				660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */,
@@ -416,8 +372,6 @@
 				66F8FD651D6CE20A0027E031 /* ProfileController.swift */,
 				662604B71D6DDFB1001E0424 /* FirstTimeController.swift */,
 				662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */,
-				6695A05A1D71A47400DE855F /* StringScore.swift */,
-				6697E20A1DF838FF00542F8C /* OMDBAPIController.swift */,
 				66487E701E072E7D001EA15A /* ButtonCell.swift */,
 			);
 			name = "Emojisodes-App";
@@ -468,7 +422,6 @@
 		66D06FC11E094DF0008ACB40 /* StickerGIFs */ = {
 			isa = PBXGroup;
 			children = (
-				37D2D4971E153B8800D5A9A8 /* contact.gif */,
 				3702CF731E115A8400599040 /* ace ventura pet detective.gif */,
 				37CE53B91E13FB4D00DD5028 /* all the president's men.gif */,
 				37CE53D81E13FB4D00DD5028 /* apollo 13.gif */,
@@ -482,13 +435,13 @@
 				37CE53B81E13FB4D00DD5028 /* clueless.gif */,
 				37CE53CB1E13FB4D00DD5028 /* coming to america.gif */,
 				37CE53CE1E13FB4D00DD5028 /* con air.gif */,
+				37D2D4971E153B8800D5A9A8 /* contact.gif */,
 				37CE53CF1E13FB4D00DD5028 /* coyote ugly.gif */,
 				37CE53DD1E13FB4D00DD5028 /* days of thunder.gif */,
 				66D06FC21E094DF0008ACB40 /* demolition man.gif */,
 				37CE53D31E13FB4D00DD5028 /* die hard.gif */,
 				3702CF811E116F7500599040 /* dirty dancing.gif */,
 				37CE53BB1E13FB4D00DD5028 /* elf.gif */,
-				373D6D0C1E16F53300E18D51 /* home alone.gif */,
 				3702CF741E115A8400599040 /* face off.gif */,
 				3702CF7C1E116F7500599040 /* father of the bride.gif */,
 				3702CF641E11565D00599040 /* ferris bueller's day off.gif */,
@@ -502,43 +455,21 @@
 				37CE53BE1E13FB4D00DD5028 /* grand budapest hotel.gif */,
 				37CE53C71E13FB4D00DD5028 /* groundhog day.gif */,
 				3702CF8E1E12AFCC00599040 /* happy gilmore.gif */,
+				373D6D0C1E16F53300E18D51 /* home alone.gif */,
 				37CE53CA1E13FB4D00DD5028 /* honey i shrunk the kids.gif */,
 				37CE53DE1E13FB4D00DD5028 /* hot fuzz.gif */,
 				3702CF5C1E11565D00599040 /* inception.gif */,
-				37CE53C11E13FB4D00DD5028 /* joy.gif */,
 				3702CF721E115A8400599040 /* kindergarten cop.gif */,
 				37CE53C01E13FB4D00DD5028 /* legally blonde.gif */,
 				37CE53C21E13FB4D00DD5028 /* little miss sunshine.gif */,
 				3702CF7D1E116F7500599040 /* my big fat greek wedding.gif */,
-				3702CF7F1E116F7500599040 /* national treasure.gif */,
-				37CE53BF1E13FB4D00DD5028 /* noah.gif */,
-				37CE53D51E13FB4D00DD5028 /* point break.gif */,
-				3702CF581E11518F00599040 /* poltergeist.gif */,
 				37CE53C31E13FB4D00DD5028 /* pretty woman.gif */,
 				3702CF561E11506800599040 /* psycho.gif */,
-				3702CF701E115A8400599040 /* pulp fiction.gif */,
-				37CE53C61E13FB4D00DD5028 /* risky business.gif */,
-				37CE53C41E13FB4D00DD5028 /* rudy.gif */,
 				3702CF601E11565D00599040 /* se7en.gif */,
-				37CE53DF1E13FB4D00DD5028 /* shaun of the dead.gif */,
-				37CE53DC1E13FB4D00DD5028 /* sherlock holmes.gif */,
-				3702CF801E116F7500599040 /* sherlock holmes.jpg */,
-				3702CF5F1E11565D00599040 /* spider-man.gif */,
-				3702CF7E1E116F7500599040 /* the dark knight.gif */,
 				37CE53BD1E13FB4D00DD5028 /* the day after tomorrow.gif */,
 				37CE53D91E13FB4D00DD5028 /* the karate kid.gif */,
-				37CE53B71E13FB4D00DD5028 /* the lion king.gif */,
-				3702CF841E116F7500599040 /* the matrix.gif */,
 				37CE53D41E13FB4D00DD5028 /* the money pit.gif */,
 				66D06FC31E094DF0008ACB40 /* the net.gif */,
-				3702CF651E11565D00599040 /* the shawshank redemption.gif */,
-				3702CF621E11565D00599040 /* the three amigos.gif */,
-				3702CF831E116F7500599040 /* the usual suspects.gif */,
-				3702CF711E115A8400599040 /* the wizard of oz.gif */,
-				3702CF5D1E11565D00599040 /* thor.gif */,
-				3702CF611E11565D00599040 /* wall-e.gif */,
-				37CE53C51E13FB4D00DD5028 /* what about bob.gif */,
-				37CE53D11E13FB4D00DD5028 /* white men can't jump.gif */,
 				3702CF5A1E1151CC00599040 /* you've got mail.gif */,
 			);
 			name = StickerGIFs;
@@ -791,34 +722,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3702CF571E11506800599040 /* psycho.gif in Resources */,
-				37CE54051E13FB4E00DD5028 /* sherlock holmes.gif in Resources */,
 				37CE53F51E13FB4E00DD5028 /* field of dreams.gif in Resources */,
-				37CE53FE1E13FB4E00DD5028 /* point break.gif in Resources */,
 				66D06F791E08C8BA008ACB40 /* Assets.xcassets in Resources */,
 				37CE53E71E13FB4E00DD5028 /* grand budapest hotel.gif in Resources */,
-				37CE53EF1E13FB4E00DD5028 /* risky business.gif in Resources */,
 				37CE53FD1E13FB4E00DD5028 /* the money pit.gif in Resources */,
-				3702CF6F1E11565D00599040 /* the shawshank redemption.gif in Resources */,
 				3702CF661E11565D00599040 /* inception.gif in Resources */,
 				37CE53EB1E13FB4E00DD5028 /* little miss sunshine.gif in Resources */,
 				3702CF861E116F7500599040 /* my big fat greek wedding.gif in Resources */,
 				37CE53FF1E13FB4E00DD5028 /* blazing saddles.gif in Resources */,
-				37CE53E01E13FB4D00DD5028 /* the lion king.gif in Resources */,
-				37CE54081E13FB4E00DD5028 /* shaun of the dead.gif in Resources */,
 				37D2D4981E153B8800D5A9A8 /* contact.gif in Resources */,
 				37CE53F61E13FB4E00DD5028 /* ghost.gif in Resources */,
-				37CE53EE1E13FB4E00DD5028 /* what about bob.gif in Resources */,
-				3702CF6B1E11565D00599040 /* wall-e.gif in Resources */,
-				3702CF881E116F7500599040 /* national treasure.gif in Resources */,
 				3702CF6D1E11565D00599040 /* back to the future.gif in Resources */,
-				3702CF8D1E116F7500599040 /* the matrix.gif in Resources */,
 				3702CF5B1E1151CC00599040 /* you've got mail.gif in Resources */,
-				3702CF891E116F7500599040 /* sherlock holmes.jpg in Resources */,
-				3702CF8C1E116F7500599040 /* the usual suspects.gif in Resources */,
-				3702CF771E115A8400599040 /* the wizard of oz.gif in Resources */,
-				3702CF6C1E11565D00599040 /* the three amigos.gif in Resources */,
 				3702CF791E115A8400599040 /* ace ventura pet detective.gif in Resources */,
-				37CE53EA1E13FB4E00DD5028 /* joy.gif in Resources */,
 				37CE54071E13FB4E00DD5028 /* hot fuzz.gif in Resources */,
 				3702CF8B1E116F7500599040 /* ghostbusters.gif in Resources */,
 				37CE53F01E13FB4E00DD5028 /* groundhog day.gif in Resources */,
@@ -829,18 +745,14 @@
 				37CE54011E13FB4E00DD5028 /* apollo 13.gif in Resources */,
 				3702CF681E11565D00599040 /* forrest gump.gif in Resources */,
 				37CE54001E13FB4E00DD5028 /* goonies.gif in Resources */,
-				37CE53FA1E13FB4E00DD5028 /* white men can't jump.gif in Resources */,
 				66D06FC51E094DF0008ACB40 /* the net.gif in Resources */,
 				3702CF6E1E11565D00599040 /* ferris bueller's day off.gif in Resources */,
 				3702CF781E115A8400599040 /* kindergarten cop.gif in Resources */,
-				3702CF761E115A8400599040 /* pulp fiction.gif in Resources */,
 				37CE53FB1E13FB4E00DD5028 /* beverly hills cop.gif in Resources */,
-				3702CF591E11518F00599040 /* poltergeist.gif in Resources */,
 				37CE53E61E13FB4E00DD5028 /* the day after tomorrow.gif in Resources */,
 				3702CF6A1E11565D00599040 /* se7en.gif in Resources */,
 				373D6D0B1E16966A00E18D51 /* GoogleService-Info.plist in Resources */,
 				37CE53E31E13FB4D00DD5028 /* caddyshack.gif in Resources */,
-				37CE53E81E13FB4E00DD5028 /* noah.gif in Resources */,
 				3702CF8F1E12AFCC00599040 /* happy gilmore.gif in Resources */,
 				37CE53F21E13FB4E00DD5028 /* gladiator.gif in Resources */,
 				3702CF851E116F7500599040 /* father of the bride.gif in Resources */,
@@ -849,10 +761,7 @@
 				37CE53E11E13FB4D00DD5028 /* clueless.gif in Resources */,
 				37CE53E21E13FB4D00DD5028 /* all the president's men.gif in Resources */,
 				3702CF7A1E115A8400599040 /* face off.gif in Resources */,
-				3702CF671E11565D00599040 /* thor.gif in Resources */,
 				37CE54041E13FB4E00DD5028 /* footloose.gif in Resources */,
-				37CE53ED1E13FB4E00DD5028 /* rudy.gif in Resources */,
-				3702CF691E11565D00599040 /* spider-man.gif in Resources */,
 				37CE53E91E13FB4E00DD5028 /* legally blonde.gif in Resources */,
 				37CE53E51E13FB4E00DD5028 /* captain america civil war.gif in Resources */,
 				66D06FC41E094DF0008ACB40 /* demolition man.gif in Resources */,
@@ -860,7 +769,6 @@
 				3702CF7B1E115A8400599040 /* big.gif in Resources */,
 				37CE53E41E13FB4D00DD5028 /* elf.gif in Resources */,
 				37CE53EC1E13FB4E00DD5028 /* pretty woman.gif in Resources */,
-				3702CF871E116F7500599040 /* the dark knight.gif in Resources */,
 				37CE53FC1E13FB4E00DD5028 /* die hard.gif in Resources */,
 				37CE53F41E13FB4E00DD5028 /* coming to america.gif in Resources */,
 				37CE53F71E13FB4E00DD5028 /* con air.gif in Resources */,

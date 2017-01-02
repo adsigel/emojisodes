@@ -25,11 +25,11 @@ class FirstTimeController: UIViewController, UITextFieldDelegate, UINavigationCo
     
     
     @IBAction func nextButton(sender: AnyObject) {
-        let step1 = "It's a 🎬 plot guessing game with 😀👍."
+        let step1 = "It's a 🎬 guessing game with 😀👍."
         let step2 = "We'll show you a bunch of 👱👩💔☔️💑 that represent the plot of a 🎬."
         let step3 = "You can 🤔 for hints, but it will cost you points."
-        let step4 = "If the hints aren't helpful, try 💌 with friends."
-        let step5 = "If all else fails, you can 🚫 for now, but that also costs points."
+        let step4 = "If the hints aren't helpful, try 💬 with friends."
+        let step5 = "If all else fails, you can 🚫 for now."
         let step6 = "You can ➕ to Emojisodes with your own 🎬 too!"
         
         if self.explainerText.text == step1 {

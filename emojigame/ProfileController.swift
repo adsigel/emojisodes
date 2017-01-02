@@ -55,7 +55,6 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
     
     @IBAction func viewMovieList(sender:AnyObject) {
         performSegueWithIdentifier("movieList", sender: sender)
-        analytics.enqueue(TrackMessageBuilder(event: "Viewed Completed").userId(uzer))
         analytics.flush()
     }
     
@@ -80,19 +79,30 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         let url = NSURL(string: "https://twitter.com/emojisodes")!
         UIApplication.sharedApplication().openURL(url)
         analytics.enqueue(TrackMessageBuilder(event: "Viewed Twitter Profile").userId(uzer))
+        analytics.flush()
     }
     
     @IBAction func sendPraise(sender: AnyObject) {
         let url = NSURL(string: "https://itunes.apple.com/us/app/emojisodes/id1147295394?ls=1&mt=8")!
         UIApplication.sharedApplication().openURL(url)
         analytics.enqueue(TrackMessageBuilder(event: "Linked to App Store").userId(uzer))
+        analytics.flush()
     }
     
     @IBAction func showLeaderboard(sender: AnyObject) {
         saveHighscore(gcScore)
         showLeader()
         analytics.enqueue(TrackMessageBuilder(event: "Viewed Leaderboard").userId(uzer))
+        analytics.flush()
     }
+    
+    @IBAction func donate(sender: AnyObject) {
+        let url = NSURL(string: "https://emojisodes.com/#donate")!
+        UIApplication.sharedApplication().openURL(url)
+        analytics.enqueue(TrackMessageBuilder(event: "Sent to Donate").userId(uzer))
+        analytics.flush()
+    }
+    
     
     func getTrophies() {
         // check for persistence
@@ -430,10 +440,8 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
                     movieTitles.append(movieItem.title.capitalizedString)
                     moviePlots.append(movieItem.plot)
                     defaults?.setObject(movieTitles as [String], forKey: "extensionMovies")
-                    defaults?.setObject(gifRef as AnyObject, forKey: "firebaseRef")
                     defaults?.synchronize()
                     print("synchronizing extMovies as \(movieTitles)")
-                    print("synchronizing firebaseRef as \(gifRef) as \(gifRef.dynamicType)")
                 }
             }
             

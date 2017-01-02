@@ -30,28 +30,28 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-    func bragFromList(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
-        let currentCell = tableView.cellForRowAtIndexPath(indexPath!)! as UITableViewCell
-        print(currentCell.textLabel!.text)
-        let composer = TWTRComposer()
-        
-        composer.setText("I'm playing @emojisodes and I figured out what movie this is! \(currentCell.textLabel!.text)")
-        
-        // Called from a UIViewController
-        composer.showFromViewController(self) { result in
-            if (result == TWTRComposerResult.Cancelled) {
-                print("Tweet composition cancelled")
-                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail"]).userId(uzer))
-            }
-            else {
-                print("Sending tweet!")
-                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success"]).userId(uzer))
-            }
-        }
-        
-    }
+//    func bragFromList(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
+//        let currentCell = tableView.cellForRowAtIndexPath(indexPath!)! as UITableViewCell
+//        print(currentCell.textLabel!.text)
+//        let composer = TWTRComposer()
+//        
+//        composer.setText("I'm playing @emojisodes and I figured out what movie this is! \(currentCell.textLabel!.text)")
+//        
+//        // Called from a UIViewController
+//        composer.showFromViewController(self) { result in
+//            if (result == TWTRComposerResult.Cancelled) {
+//                print("Tweet composition cancelled")
+//                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail"]).userId(uzer))
+//            }
+//            else {
+//                print("Sending tweet!")
+//                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success"]).userId(uzer))
+//            }
+//        }
+//        
+//    }
     
     //this method will populate the table view
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -76,6 +76,7 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
 //        let item = tableView.cellForRowAtIndexPath(row)!.textLabel!.text!
         print("button tapped on row \(row)")
         let sharePlot = moviePlots[row]
+        let shareTitle = movieTitles[row]
         let composer = TWTRComposer()
         
         composer.setText("I'm playing @emojisodes and I figured out what movie this is! \(sharePlot)")
@@ -84,11 +85,11 @@ class MovieListController: UIViewController, UITableViewDataSource, UITableViewD
         composer.showFromViewController(self) { result in
             if (result == TWTRComposerResult.Cancelled) {
                 print("Tweet composition cancelled")
-                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "fail", "place": "movieList"]).userId(uzer))
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": shareTitle, "outcome": "fail", "place": "movieList"]).userId(uzer))
             }
             else {
                 print("Sending tweet!")
-                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": movieDict["title"]!, "outcome": "success", "place": "movieList"]).userId(uzer))
+                self.analytics.enqueue(TrackMessageBuilder(event: "Bragged").properties(["movie": shareTitle, "outcome": "success", "place": "movieList"]).userId(uzer))
             }
         }
     }

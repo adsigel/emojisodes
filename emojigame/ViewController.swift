@@ -158,7 +158,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //                userRef.child(uzer).child("first_to_be_right").setValue(true)
 //            }
             movieDict["points"] as! Int
-            let guessRightAlert = UIAlertController(title: "That's it!", message: "You got it right!", preferredStyle: UIAlertControllerStyle.Alert)
+            let guessRightAlert = UIAlertController(title: "You got it!", message: "The movie was \(movieDict["title"]!.capitalizedString) (\(movieDict["year"]!)), directed by \(movieDict["director"]!).", preferredStyle: UIAlertControllerStyle.Alert)
             let OKAction = UIAlertAction(title: "Next movie", style: .Default) { (action) in
                 self.nextRound()
                 var newScore: Int = userDict["score"] as! Int
@@ -304,9 +304,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         activityVC.popoverPresentationController?.sourceView = sender as! UIView
         self.presentViewController(activityVC, animated: true, completion: nil)
         activityVC.completionWithItemsHandler = {(activityType, completed:Bool, returnedItems:[AnyObject]?, error: NSError?) in
-            //technically only checks if user presses Cancel at share sheet level, not tweet level
-            self.analytics.enqueue(TrackMessageBuilder(event: "Shared Movie").properties(["movie": movieDict["title"]!]).userId(uzer))
-            self.analytics.flush()
+            if completed == true {
+                self.analytics.enqueue(TrackMessageBuilder(event: "Shared Movie").properties(["movie": movieDict["title"]!, "outcome": "success"]).userId(uzer))
+                self.analytics.flush()
+            } else {
+                self.analytics.enqueue(TrackMessageBuilder(event: "Shared Movie").properties(["movie": movieDict["title"]!, "outcome": "fail"]).userId(uzer))
+                self.analytics.flush()
+            }
+//            self.analytics.enqueue(TrackMessageBuilder(event: "Shared Movie").properties(["movie": movieDict["title"]!]).userId(uzer))
+//            self.analytics.flush()
         }
     }
     
@@ -320,6 +326,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func addMovie(sender: AnyObject) {
         remember = movieToGuess
+        analytics.enqueue(TrackMessageBuilder(event: "Viewed Add Movie Screen").userId(uzer))
+        analytics.flush()
         performSegueWithIdentifier("AddMovie", sender: sender)
     }
     

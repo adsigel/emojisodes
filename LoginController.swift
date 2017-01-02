@@ -25,9 +25,6 @@ var newUser = String()
 var gcAuth : Bool = false
 var alias = ""
 var defaults = NSUserDefaults(suiteName: "group.com.adamdsigel.emojisodes")
-let storage = FIRStorage.storage()
-let storageRef = storage.referenceForURL("gs://emojisodes.appspot.com")
-let gifRef = storageRef.child("gif")
 
 class LoginController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     

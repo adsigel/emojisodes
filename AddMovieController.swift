@@ -38,12 +38,13 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         apiController.delegate = self
-        analytics.enqueue(TrackMessageBuilder(event: "Viewed Add Movie Screen").properties(["title": userSubmitTitle.text!, "plot": userSubmitPlot.text!]).userId(uzer))
         userSubmitTitle.addTarget(self, action: "textFieldDidEndEditing:", forControlEvents: UIControlEvents.EditingDidEnd)
     }
     
     @IBAction func goBackButton(sender: AnyObject) {
         comingBack = true
+        analytics.enqueue(TrackMessageBuilder(event: "Dismissed Add Movie Screen").userId(uzer))
+        analytics.flush()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -53,6 +54,31 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
         }
     }
     
+    @IBAction func inspireMe(sender: AnyObject) {
+        let messageArray = [
+            "What is the last movie you watched with friends?",
+            "What is your favorite movie from this decade?",
+            "Who is your favorite actress?",
+            "What's the last movie you watched at home?",
+            "What's a guilty pleasure movie people don't know you like?",
+            "What's the last movie you saw that won an Oscar?",
+            "Which movie makes you laugh hardest?",
+            "What's a movie you like that takes place in another country?",
+            "What's a movie that has an animal in it?",
+            ""
+            ]
+        var random = Int(arc4random_uniform(UInt32(messageArray.count)))
+        var message = messageArray[random]
+
+        let inspireMe = UIAlertController(title: "Think of a movie", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let okay = UIAlertAction(title: "Dismiss", style: .Default) { (action) in
+        
+        }
+        inspireMe.addAction(okay)
+        analytics.enqueue(TrackMessageBuilder(event: "Asked for Inspiration").properties(["message": message]).userId(uzer))
+        analytics.flush()
+        self.presentViewController(inspireMe, animated: true, completion: nil)
+    }
     @IBAction func userSubmitMovie (_ sender: AnyObject) {
         self.currentDate()
         let userTitle = userSubmitTitle.text?.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
@@ -66,6 +92,7 @@ class AddMovieController: UIViewController, UITextFieldDelegate, OMDBAPIControll
                 self.userSubmitPlot.selectedTextRange = self.userSubmitPlot.textRangeFromPosition(self.userSubmitPlot.beginningOfDocument, toPosition: self.userSubmitPlot.endOfDocument)
             }
             lettersInPlot.addAction(okay)
+            analytics.enqueue(TrackMessageBuilder(event: "Bad Movie Submission").properties(["submission": userPlot!]).userId(uzer))
             self.presentViewController(lettersInPlot, animated: true, completion: nil)
         } else {
             if userTitle != "" && userPlot != "" {
