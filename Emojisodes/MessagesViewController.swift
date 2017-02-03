@@ -43,6 +43,11 @@ class MessagesViewController: MSMessagesAppViewController {
 //            }
 //        }
         syncDefaults()
+//        let label = UILabel(frame: CGRectMake(0, 0, 300, 21))
+//        label.center = CGPointMake(0, 500)
+//        label.textAlignment = NSTextAlignment.Left
+//        label.text = "Solve more 🎬 to unlock more GIFs"
+//        self.view.addSubview(label)
 //        setupStickerBrowser()
         // Do any additional setup after loading the view.
     }

@@ -16,14 +16,15 @@ var gcScore : Int = 0
 var exclude: Int = 0
 var movieTitles: Array = [String]()
 var moviePlots: Array = [String]()
+var submittedMovieTitles: Array = [String]()
+var submittedMoviePlots: Array = [String]()
 
 class ProfileController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, GKGameCenterControllerDelegate {
     
     var analytics = Analytics.create("8KlUfkkGBbR8SOKAqwCK7C23AZ43KkQj")
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var correctLabel: UIButton!
-    @IBOutlet weak var submittedLabel: UILabel!
+    @IBOutlet weak var submitLabel: UIButton!
     @IBOutlet weak var trophyPersistence: UIButton!
     @IBOutlet weak var trophyFirst: UIButton!
     @IBOutlet weak var trophyCrayon: UIButton!
@@ -46,7 +47,6 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         refreshUser()
         self.correctLabel.setTitle(String(userDict["correct"]!), forState: UIControlState.Normal)
         self.nameField.text = String(userDict["name"]!)
-        self.emailField.text = String(userDict["email"]!)
         getSubmittedCount()
         getTrophies()
         buildMovieList()
@@ -54,17 +54,20 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
     }
     
     @IBAction func viewMovieList(sender:AnyObject) {
-        performSegueWithIdentifier("movieList", sender: sender)
+        performSegueWithIdentifier("correctMovieList", sender: sender)
         analytics.flush()
     }
     
+    @IBAction func viewSubmittedList(sender: AnyObject) {
+        performSegueWithIdentifier("submittedMovieList", sender: sender)
+        analytics.flush()
+
+    }
     
     @IBAction func finishUpButton(sender: AnyObject) {
         let name = nameField.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let email = emailField.text?.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         let userRef = ref.child("users").child(uzer)
         userRef.child("name").setValue(name)
-        userRef.child("email").setValue(email)
         comingBack = true
         analytics.flush()
         self.dismissViewControllerAnimated(true, completion: nil)        
@@ -379,12 +382,38 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
     
     
     func getSubmittedCount() {
+        let submittedDict = [String:AnyObject]()
         userRef.child(uzer).child("submitted").observeSingleEventOfType(.Value, withBlock: { (snapshot: FIRDataSnapshot!) in
             var count = 0
             count += Int(snapshot.childrenCount)
             print("count of child nodes is \(count)")
-            self.submittedLabel.text = String(count)
+            self.submitLabel.setTitle(String(count), forState: UIControlState.Normal)
+        // get all the keys from user.child("submitted") and use those keys to loop through /movies to build an array
         })
+        if userDict["submitted"] != nil {
+            print("****found something at /submitted")
+            print("submittedDict is \(userDict["submitted"]!)")
+            var submittedKeys = Array(submittedDict.keys)
+            movieRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                for item in snapshot.children {
+                    let movieItem = Movies(snapshot: item as! FIRDataSnapshot)
+                    //                print("movieItem is \(movieItem)")
+                    movieID = movieItem.key!
+                    if submittedKeys.contains(movieID) {
+                        print("Found a match")
+                        submittedMovieTitles.append(movieItem.title.capitalizedString)
+                        submittedMoviePlots.append(movieItem.plot)
+                        submittedMovieTitles.sort { $0.localizedCaseInsensitiveCompare($1) == NSComparisonResult.OrderedDescending }
+                    }
+                }
+            })
+        } else {
+            print("****user has nothing at /submitted")
+        }
+//        var submittedDict = userDict["submitted"]! as! [String: AnyObject]
+//        print("submittedDict is \(userDict["submitted"]!)")
+//        var submittedKeys = Array(submittedDict.keys)
+//        print ("submittedKeys is \(submittedKeys)")
     }
     
     func saveHighscore(gcScore:Int) {
@@ -416,6 +445,8 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         })
         movieTitles = []
         moviePlots = []
+        submittedMovieTitles = []
+        submittedMoviePlots = []
     }
     
     func buildMovieList() {
@@ -423,20 +454,20 @@ class ProfileController: UIViewController, UITextFieldDelegate, UINavigationCont
         userRef.child(uzer).child("exclude").observeSingleEventOfType(.Value, withBlock: { (snapshot: FIRDataSnapshot!) in
             var count = 0
             count += Int(snapshot.childrenCount)
-            print("count of child nodes is \(count)")
+//            print("count of child nodes is \(count)")
             exclude = count
         })
         var excludeDict = userDict["exclude"]! as! [String: AnyObject]
-        print("exclusion dict is \(userDict["exclude"]!)")
+//        print("exclusion dict is \(userDict["exclude"]!)")
         var excludeKeys = Array(excludeDict.keys)
-        print ("excludeKeys is \(excludeKeys)")
+//        print ("excludeKeys is \(excludeKeys)")
         movieRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
             for item in snapshot.children {
                 let movieItem = Movies(snapshot: item as! FIRDataSnapshot)
-                print("movieItem is \(movieItem)")
+//                print("movieItem is \(movieItem)")
                 movieID = movieItem.key!
                 if excludeKeys.contains(movieID) {
-                    print("Found a match")
+//                    print("Found a match")
                     movieTitles.append(movieItem.title.capitalizedString)
                     moviePlots.append(movieItem.plot)
                     defaults?.setObject(movieTitles as [String], forKey: "extensionMovies")

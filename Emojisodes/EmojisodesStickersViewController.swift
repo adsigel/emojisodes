@@ -54,7 +54,6 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
 //                    print("no extMovies to be found here")
                 }
             }
-            
         }
         
     }
@@ -111,8 +110,7 @@ class EmojisodesStickersViewController : MSStickerBrowserViewController {
             stickers.append(sticker)
         }
         
-        analytics.enqueue(TrackMessageBuilder(event: "Loaded Stickers").userId(extUzer))
-        analytics.flush()
+        
         
         return stickers
     }

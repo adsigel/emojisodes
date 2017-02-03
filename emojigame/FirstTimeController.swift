@@ -20,7 +20,8 @@ class FirstTimeController: UIViewController, UITextFieldDelegate, UINavigationCo
     
     override func viewDidLoad() {
         analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Begin").userId(uzer))
-        self.explainerText.text = "It's a 🎬 plot guessing game with 😀👍."
+        self.explainerText.text = "It's a 🎬 guessing game with 😀👍."
+        analytics.flush()
     }
     
     
@@ -35,27 +36,33 @@ class FirstTimeController: UIViewController, UITextFieldDelegate, UINavigationCo
         if self.explainerText.text == step1 {
             self.explainerText.text = step2
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Step 2").userId(uzer))
+            analytics.flush()
             }
         else if self.explainerText.text == step2 {
             self.explainerText.text = step3
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Step 3").userId(uzer))
+            analytics.flush()
             }
         else if self.explainerText.text == step3 {
             self.explainerText.text = step4
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Step 4").userId(uzer))
+            analytics.flush()
             }
         else if self.explainerText.text == step4 {
             self.explainerText.text = step5
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Step 5").userId(uzer))
+            analytics.flush()
             }
         else if self.explainerText.text == step5 {
             self.explainerText.text = step6
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Step 6").userId(uzer))
+            analytics.flush()
             }
         else if self.explainerText.text == step6 {
             self.doTogether.hidden = false
             self.checkMark.hidden = false
             analytics.enqueue(TrackMessageBuilder(event: "Onboarding: Complete").userId(uzer))
+            analytics.flush()
             }
         }
     

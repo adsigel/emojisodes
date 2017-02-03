@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F962A2AC477CB7C72768F96 /* Pods_emojigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585542A64B59979D93B4C209 /* Pods_emojigameTests.framework */; };
-		344B2A1DEFE9EC1D7B78AE85 /* Pods_emojigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E599ED5A78AE76F78C8E5 /* Pods_emojigameUITests.framework */; };
 		3702CF571E11506800599040 /* psycho.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF561E11506800599040 /* psycho.gif */; };
 		3702CF5B1E1151CC00599040 /* you've got mail.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5A1E1151CC00599040 /* you've got mail.gif */; };
 		3702CF661E11565D00599040 /* inception.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF5C1E11565D00599040 /* inception.gif */; };
@@ -25,9 +23,6 @@
 		3702CF8A1E116F7500599040 /* dirty dancing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF811E116F7500599040 /* dirty dancing.gif */; };
 		3702CF8B1E116F7500599040 /* ghostbusters.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF821E116F7500599040 /* ghostbusters.gif */; };
 		3702CF8F1E12AFCC00599040 /* happy gilmore.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3702CF8E1E12AFCC00599040 /* happy gilmore.gif */; };
-		3719A66B1E14859700644F09 /* Pods_emojigame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719A66A1E14859700644F09 /* Pods_emojigame.framework */; };
-		3732394E1E14405A00F03599 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3732394D1E14405A00F03599 /* AnalyticsSwift.framework */; };
-		373239501E14408000F03599 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3732394F1E14408000F03599 /* AnalyticsSwift.framework */; };
 		373D6D0B1E16966A00E18D51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 373D6D091E16966A00E18D51 /* GoogleService-Info.plist */; };
 		373D6D0D1E16F53300E18D51 /* home alone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 373D6D0C1E16F53300E18D51 /* home alone.gif */; };
 		373D6D0E1E16F53300E18D51 /* home alone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 373D6D0C1E16F53300E18D51 /* home alone.gif */; };
@@ -63,11 +58,13 @@
 		37CE54071E13FB4E00DD5028 /* hot fuzz.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37CE53DE1E13FB4D00DD5028 /* hot fuzz.gif */; };
 		37D2D4981E153B8800D5A9A8 /* contact.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37D2D4971E153B8800D5A9A8 /* contact.gif */; };
 		4818E6306E4CFFF7240DA659 /* Pods_emojigame_Emojisodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E484E61D0C3480FB41255C /* Pods_emojigame_Emojisodes.framework */; };
+		6600C5DF1E251208003DFC77 /* SubmittedMovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6600C5DD1E246871003DFC77 /* SubmittedMovieController.swift */; };
 		660A6F1B1E0AF1EB005A14BC /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */; };
 		660A6F1C1E0AF1EB005A14BC /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */; };
 		660A6F1D1E0AF1EB005A14BC /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */; };
 		660A6F1E1E0AF1EB005A14BC /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F191E0AF1EB005A14BC /* Lato-Light.ttf */; };
 		660A6F1F1E0AF1EB005A14BC /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 660A6F1A1E0AF1EB005A14BC /* Lato-Medium.ttf */; };
+		6611DE381E2877F60017EEC1 /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6611DE371E2877F60017EEC1 /* Toast_Swift.framework */; };
 		662604B81D6DDFB1001E0424 /* FirstTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662604B71D6DDFB1001E0424 /* FirstTimeController.swift */; };
 		662604BA1D6DDFBB001E0424 /* FirstTime2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */; };
 		662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FF3A41DF9B3B200761080 /* TwitterKit.framework */; };
@@ -79,6 +76,9 @@
 		66695A461D3CFEDF008FEA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A3F1D3CFEDF008FEA44 /* ViewController.swift */; };
 		66695A481D3CFEDF008FEA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695A411D3CFEDF008FEA44 /* AppDelegate.swift */; };
 		66695A4A1D3CFEDF008FEA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66695A431D3CFEDF008FEA44 /* Assets.xcassets */; };
+		668446BA1E2A625F001DE284 /* rocky iv.gif in Resources */ = {isa = PBXBuildFile; fileRef = 668446B71E2A625F001DE284 /* rocky iv.gif */; };
+		668446BB1E2A625F001DE284 /* the princess bride.gif in Resources */ = {isa = PBXBuildFile; fileRef = 668446B81E2A625F001DE284 /* the princess bride.gif */; };
+		668446BC1E2A625F001DE284 /* the fugitive.gif in Resources */ = {isa = PBXBuildFile; fileRef = 668446B91E2A625F001DE284 /* the fugitive.gif */; };
 		6691FD4C1DF8FD150015BA00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6691FD4B1DF8FD150015BA00 /* GoogleService-Info.plist */; };
 		6695A05B1D71A47400DE855F /* StringScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695A05A1D71A47400DE855F /* StringScore.swift */; };
 		669656461D5B59F8002B516C /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 669656441D5B59F8002B516C /* Podfile.lock */; };
@@ -174,9 +174,6 @@
 		3702CF811E116F7500599040 /* dirty dancing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dirty dancing.gif"; sourceTree = "<group>"; };
 		3702CF821E116F7500599040 /* ghostbusters.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ghostbusters.gif; sourceTree = "<group>"; };
 		3702CF8E1E12AFCC00599040 /* happy gilmore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "happy gilmore.gif"; sourceTree = "<group>"; };
-		3719A66A1E14859700644F09 /* Pods_emojigame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_emojigame.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-hlajniaroansvldolegsphuktpbt/Build/Products/Debug-iphonesimulator/Pods_emojigame.framework"; sourceTree = "<group>"; };
-		3732394D1E14405A00F03599 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "Pods/../build/Debug-iphoneos/AnalyticsSwift.framework"; sourceTree = "<group>"; };
-		3732394F1E14408000F03599 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnalyticsSwift.framework; path = "Pods/../build/Debug-iphoneos/AnalyticsSwift.framework"; sourceTree = "<group>"; };
 		373D6D091E16966A00E18D51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		373D6D0C1E16F53300E18D51 /* home alone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "home alone.gif"; sourceTree = "<group>"; };
 		37CE53B81E13FB4D00DD5028 /* clueless.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = clueless.gif; sourceTree = "<group>"; };
@@ -210,12 +207,13 @@
 		37CE53DE1E13FB4D00DD5028 /* hot fuzz.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "hot fuzz.gif"; sourceTree = "<group>"; };
 		37D2D4971E153B8800D5A9A8 /* contact.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = contact.gif; sourceTree = "<group>"; };
 		396BFF86A83756C07C883845 /* Pods-emojigameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests.debug.xcconfig"; sourceTree = "<group>"; };
-		585542A64B59979D93B4C209 /* Pods_emojigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6600C5DD1E246871003DFC77 /* SubmittedMovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmittedMovieController.swift; path = Emojisodes/SubmittedMovieController.swift; sourceTree = SOURCE_ROOT; };
 		660A6F161E0AF1EB005A14BC /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = SOURCE_ROOT; };
 		660A6F171E0AF1EB005A14BC /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		660A6F181E0AF1EB005A14BC /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = SOURCE_ROOT; };
 		660A6F191E0AF1EB005A14BC /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		660A6F1A1E0AF1EB005A14BC /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		6611DE371E2877F60017EEC1 /* Toast_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast_Swift.framework; path = "../Library/Developer/Xcode/DerivedData/emojigame-doeqvqscdfexrpdywczrmsbfhgoz/Build/Products/Debug-iphoneos/Toast-Swift/Toast_Swift.framework"; sourceTree = "<group>"; };
 		662604B71D6DDFB1001E0424 /* FirstTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTimeController.swift; path = emojigame/FirstTimeController.swift; sourceTree = SOURCE_ROOT; };
 		662604B91D6DDFBB001E0424 /* FirstTime2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstTime2Controller.swift; path = emojigame/FirstTime2Controller.swift; sourceTree = SOURCE_ROOT; };
 		662FF3A41DF9B3B200761080 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
@@ -224,15 +222,17 @@
 		66374B571D2EFF58007024B1 /* emojigame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emojigame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B6B1D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66374B761D2EFF58007024B1 /* emojigame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojigame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		66374B881D2F007D007024B1 /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
 		66487E701E072E7D001EA15A /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCell.swift; path = emojigame/ButtonCell.swift; sourceTree = SOURCE_ROOT; };
 		665296391E00580C00854403 /* MovieListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieListController.swift; path = emojigame/MovieListController.swift; sourceTree = SOURCE_ROOT; };
 		666765661D7267C4001A3872 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		666765681D7267C9001A3872 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		66695A3F1D3CFEDF008FEA44 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = emojigame/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		66695A3F1D3CFEDF008FEA44 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = ViewController.swift; path = emojigame/ViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66695A411D3CFEDF008FEA44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = emojigame/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		66695A421D3CFEDF008FEA44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = emojigame/Info.plist; sourceTree = SOURCE_ROOT; };
 		66695A431D3CFEDF008FEA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = emojigame/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		668446B71E2A625F001DE284 /* rocky iv.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "rocky iv.gif"; sourceTree = "<group>"; };
+		668446B81E2A625F001DE284 /* the princess bride.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the princess bride.gif"; sourceTree = "<group>"; };
+		668446B91E2A625F001DE284 /* the fugitive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "the fugitive.gif"; sourceTree = "<group>"; };
 		6691FD4B1DF8FD150015BA00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6695A05A1D71A47400DE855F /* StringScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringScore.swift; sourceTree = SOURCE_ROOT; };
 		669656441D5B59F8002B516C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
@@ -261,7 +261,6 @@
 		66EB93D41D329BF90081FF4F /* SwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftPlayground.playground; sourceTree = "<group>"; };
 		66F8FD5D1D5B5CCD0027E031 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = SOURCE_ROOT; };
 		66F8FD651D6CE20A0027E031 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = emojigame/ProfileController.swift; sourceTree = SOURCE_ROOT; };
-		7F7E599ED5A78AE76F78C8E5 /* Pods_emojigameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emojigameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B4767F631DB37143FB79FC /* Pods-emojigameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameTests/Pods-emojigameTests.release.xcconfig"; sourceTree = "<group>"; };
 		93AEC1F590FA126D6F68B298 /* Pods-emojigameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emojigameUITests/Pods-emojigameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C02BCD1D7CB2844526C26F06 /* Pods-emojigame-Emojisodes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emojigame-Emojisodes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emojigame-Emojisodes/Pods-emojigame-Emojisodes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,7 +271,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373239501E14408000F03599 /* AnalyticsSwift.framework in Frameworks */,
 				662FF3A71DF9B3B200761080 /* TwitterKit.framework in Frameworks */,
 				662FF3A91DF9B3B200761080 /* TwitterCore.framework in Frameworks */,
 				666765671D7267C4001A3872 /* GameKit.framework in Frameworks */,
@@ -286,7 +284,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F962A2AC477CB7C72768F96 /* Pods_emojigameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +291,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344B2A1DEFE9EC1D7B78AE85 /* Pods_emojigameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3719A66B1E14859700644F09 /* Pods_emojigame.framework in Frameworks */,
-				3732394E1E14405A00F03599 /* AnalyticsSwift.framework in Frameworks */,
+				6611DE381E2877F60017EEC1 /* Toast_Swift.framework in Frameworks */,
 				66D06F711E08C8BA008ACB40 /* Messages.framework in Frameworks */,
 				4818E6306E4CFFF7240DA659 /* Pods_emojigame_Emojisodes.framework in Frameworks */,
 			);
@@ -366,6 +361,7 @@
 				66695A3F1D3CFEDF008FEA44 /* ViewController.swift */,
 				66DE19BD1D524317001E589B /* AddMovieController.swift */,
 				665296391E00580C00854403 /* MovieListController.swift */,
+				6600C5DD1E246871003DFC77 /* SubmittedMovieController.swift */,
 				66F8FD5D1D5B5CCD0027E031 /* LoginController.swift */,
 				66695A411D3CFEDF008FEA44 /* AppDelegate.swift */,
 				66695A421D3CFEDF008FEA44 /* Info.plist */,
@@ -397,7 +393,6 @@
 		66374B891D2F008D007024B1 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				66374B881D2F007D007024B1 /* Scratchpad.playground */,
 				66EB93D41D329BF90081FF4F /* SwiftPlayground.playground */,
 			);
 			name = Playgrounds;
@@ -438,6 +433,9 @@
 				37D2D4971E153B8800D5A9A8 /* contact.gif */,
 				37CE53CF1E13FB4D00DD5028 /* coyote ugly.gif */,
 				37CE53DD1E13FB4D00DD5028 /* days of thunder.gif */,
+				668446B71E2A625F001DE284 /* rocky iv.gif */,
+				668446B81E2A625F001DE284 /* the princess bride.gif */,
+				668446B91E2A625F001DE284 /* the fugitive.gif */,
 				66D06FC21E094DF0008ACB40 /* demolition man.gif */,
 				37CE53D31E13FB4D00DD5028 /* die hard.gif */,
 				3702CF811E116F7500599040 /* dirty dancing.gif */,
@@ -488,9 +486,7 @@
 		9125B2BA5E2246347F499BB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3719A66A1E14859700644F09 /* Pods_emojigame.framework */,
-				3732394F1E14408000F03599 /* AnalyticsSwift.framework */,
-				3732394D1E14405A00F03599 /* AnalyticsSwift.framework */,
+				6611DE371E2877F60017EEC1 /* Toast_Swift.framework */,
 				66D06FC71E0956B3008ACB40 /* GoogleToolboxForMac.framework */,
 				66D06FC81E0956B3008ACB40 /* GTMSessionFetcher.framework */,
 				662FF3A41DF9B3B200761080 /* TwitterKit.framework */,
@@ -503,8 +499,6 @@
 				66CAD6251E03FDCE00FF3078 /* Messages.framework */,
 				1D06AC990B5B0E3F0426942B /* Pods_emojigame.framework */,
 				26E484E61D0C3480FB41255C /* Pods_emojigame_Emojisodes.framework */,
-				585542A64B59979D93B4C209 /* Pods_emojigameTests.framework */,
-				7F7E599ED5A78AE76F78C8E5 /* Pods_emojigameUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -729,6 +723,7 @@
 				3702CF661E11565D00599040 /* inception.gif in Resources */,
 				37CE53EB1E13FB4E00DD5028 /* little miss sunshine.gif in Resources */,
 				3702CF861E116F7500599040 /* my big fat greek wedding.gif in Resources */,
+				668446BC1E2A625F001DE284 /* the fugitive.gif in Resources */,
 				37CE53FF1E13FB4E00DD5028 /* blazing saddles.gif in Resources */,
 				37D2D4981E153B8800D5A9A8 /* contact.gif in Resources */,
 				37CE53F61E13FB4E00DD5028 /* ghost.gif in Resources */,
@@ -741,6 +736,7 @@
 				37CE53F11E13FB4E00DD5028 /* armageddon.gif in Resources */,
 				3702CF8A1E116F7500599040 /* dirty dancing.gif in Resources */,
 				37CE53F81E13FB4E00DD5028 /* coyote ugly.gif in Resources */,
+				668446BB1E2A625F001DE284 /* the princess bride.gif in Resources */,
 				373D6D0E1E16F53300E18D51 /* home alone.gif in Resources */,
 				37CE54011E13FB4E00DD5028 /* apollo 13.gif in Resources */,
 				3702CF681E11565D00599040 /* forrest gump.gif in Resources */,
@@ -770,6 +766,7 @@
 				37CE53E41E13FB4D00DD5028 /* elf.gif in Resources */,
 				37CE53EC1E13FB4E00DD5028 /* pretty woman.gif in Resources */,
 				37CE53FC1E13FB4E00DD5028 /* die hard.gif in Resources */,
+				668446BA1E2A625F001DE284 /* rocky iv.gif in Resources */,
 				37CE53F41E13FB4E00DD5028 /* coming to america.gif in Resources */,
 				37CE53F71E13FB4E00DD5028 /* con air.gif in Resources */,
 				37CE54021E13FB4E00DD5028 /* the karate kid.gif in Resources */,
@@ -976,6 +973,7 @@
 				6697E20B1DF838FF00542F8C /* OMDBAPIController.swift in Sources */,
 				66F8FD661D6CE20A0027E031 /* ProfileController.swift in Sources */,
 				66DE19C21D524737001E589B /* Users.swift in Sources */,
+				6600C5DF1E251208003DFC77 /* SubmittedMovieController.swift in Sources */,
 				66F8FD5E1D5B5CCD0027E031 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

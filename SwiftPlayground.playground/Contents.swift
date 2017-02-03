@@ -6,6 +6,15 @@ import Foundation
 
 var plot = ""
 
+var movieDict = ["title": "Father of the Bride", "year": "1991", "actors": "Steve Martin, Diane Keaton", "plot": "💱➕🔈"]
+
+movieDict["year"]
+movieDict["plot"]!
+print(movieDict["plot"]!)
+print(movieDict["year"]!)
+
+movieDict["quote"]
+
 var newArray : Array = [String]()
 
 var allMovies = ["the net", "demolition man", "psycho", "inception", "the shawshank redemption"]

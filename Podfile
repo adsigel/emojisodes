@@ -11,6 +11,7 @@ target 'emojigame' do
   pod 'Firebase/Storage', '~> 3.7.0'
   pod 'Firebase/Auth', '~> 3.7.0'
   pod 'AnalyticsSwift', '~> 0.2.0'
+  pod 'Toast-Swift', '~> 1.4.0'
   # pod 'Segment-Amplitude'
   # pod 'Amplitude-iOS', '~> 3.7.0'
   # pod 'TwitterKit'

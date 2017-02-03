@@ -38,6 +38,7 @@ PODS:
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
   - StringScore_Swift (0.1.1)
+  - Toast-Swift (1.4.0)
 
 DEPENDENCIES:
   - AnalyticsSwift (~> 0.2.0)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - Firebase/Database (~> 3.7.0)
   - Firebase/Storage (~> 3.7.0)
   - StringScore_Swift
+  - Toast-Swift (~> 1.4.0)
 
 SPEC CHECKSUMS:
   AnalyticsSwift: 76329ac0b66be9747e9f718076c53d264ed24089
@@ -61,7 +63,8 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   StringScore_Swift: 821102bf4b5253725ee1b418b4fe5d21547a2a0f
+  Toast-Swift: aa9f0120aa6f0b6186a1e7fce2797571be34d857
 
-PODFILE CHECKSUM: d0c0f55c29f5a5802e42f15a3b2a16ff7348b81d
+PODFILE CHECKSUM: e1fdbcedf81ec63c50c93ed9837ca1bb490449b7
 
 COCOAPODS: 1.1.1
